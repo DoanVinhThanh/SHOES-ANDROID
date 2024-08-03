@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.13.0] C:\Users\admin\.gradle\caches\transforms-3\3c5cb65847f709100393cd48da8d3c6c\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-24:19
+17-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-26:19
 18        android:allowBackup="true"
 18-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -40,23 +40,23 @@
 27        android:supportsRtl="true"
 27-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
-29        android:theme="@style/Theme.Nike" >
-29-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:13:9-42
+29        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+29-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:13:9-65
 30        <activity
-30-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="com.example.nike.MainActivity"
-31-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:16:13-41
+30-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:17:9-25:20
+31            android:name="com.example.nike.Activity.TrangChuActivity"
+31-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:18:13-54
 32            android:exported="true" >
-32-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:17:13-36
+32-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:19:13-36
 33            <intent-filter>
-33-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:18:13-22:29
+33-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:20:13-24:29
 34                <action android:name="android.intent.action.MAIN" />
-34-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:19:17-69
-34-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:19:25-66
+34-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:17-69
+34-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:25-66
 35
 36                <category android:name="android.intent.category.LAUNCHER" />
-36-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:17-77
-36-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:27-74
+36-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:23:17-77
+36-->D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:23:27-74
 37            </intent-filter>
 38        </activity>
 39

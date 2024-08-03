@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Nike</string>
+    <string name="open_nav">Nike</string>
+    <string name="close_nav">Nike</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

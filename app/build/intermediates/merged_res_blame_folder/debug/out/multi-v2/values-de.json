@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.nike.app-mergeDebugResources-29:/values-de/values-de.xml",
+            "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\3c5cb65847f709100393cd48da8d3c6c\\transformed\\core-1.13.0\\res\\values-de\\values-de.xml",

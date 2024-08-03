@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.nike.app-mergeDebugResources-29:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\792d687ab1293c3b1656c477afd1c78d\\transformed\\material-1.12.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
