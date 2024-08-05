@@ -12,8 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="34">
-
-
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.TrangChuActivity"
             android:exported="true">
