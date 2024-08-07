@@ -3002,6 +3002,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_manage_search_24
 drawable baseline_search_24
+drawable border_category
 drawable border_dark_light
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3098,6 +3099,17 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nike_airforce1
+drawable nike_airjordan1
+drawable nike_blazer
+drawable nike_cortez
+drawable nike_dunk
+drawable nike_elcectric_pack
+drawable nike_infinityrn_4_electric
+drawable nike_invicible_3_electric
+drawable nike_pegasus_41_electric
+drawable nike_skillshot
+drawable nike_vaporfly_3_electric
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3116,6 +3128,8 @@ drawable outline_favorite_border_24
 drawable outline_home_24
 drawable outline_settings_24
 drawable outline_shopping_bag_24
+drawable phantom_gx_2_academy_easyon_electric
+drawable phantom_luna_2_elite_electric
 drawable round_back_white
 drawable round_back_white_100
 drawable smooth_black
@@ -3348,6 +3362,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id image_category
 id immediateStop
 id included
 id indeterminate
@@ -3494,6 +3510,10 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewNewProducts
+id recyclerViewNewProducts_women
+id recyclerView_category
+id recyclerView_category_wommen
 id report_drawn
 id reverseSawtooth
 id right
@@ -3587,6 +3607,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3781,6 +3802,8 @@ layout fragment_shop
 layout fragment_women
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_category
+layout item_new_product
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

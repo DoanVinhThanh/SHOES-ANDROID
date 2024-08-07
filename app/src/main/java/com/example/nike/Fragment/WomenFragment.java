@@ -3,64 +3,80 @@ package com.example.nike.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.nike.Adapter.CategoryAdapter;
+import com.example.nike.Adapter.NewProductAdapter;
+import com.example.nike.Model.Category;
+import com.example.nike.Model.NewProduct;
 import com.example.nike.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link WomenFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class WomenFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public WomenFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment WomenFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static WomenFragment newInstance(String param1, String param2) {
-        WomenFragment fragment = new WomenFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    private RecyclerView recyclerView;
+    private CategoryAdapter categoryAdapter;
+    private List<Category> categoryList;
+    private RecyclerView recyclerViewNewProducts;
+    private NewProductAdapter newProductAdapter;
+    private List<NewProduct> newProductList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_women, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_women, container, false);
+
+        Anhxa(view);
+
+        setDataRCVcategory();
+        setDataRCVnewShoes();
+
+        return view;
+
     }
+    private void setDataRCVcategory(){
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false ));
+
+        categoryList = new ArrayList<>();
+        categoryList.add(new Category(R.drawable.nike_dunk));
+        categoryList.add(new Category(R.drawable.nike_airjordan1));
+        categoryList.add(new Category(R.drawable.nike_cortez));
+        categoryList.add(new Category(R.drawable.nike_airforce1));
+        categoryList.add(new Category(R.drawable.nike_blazer));
+        categoryList.add(new Category(R.drawable.nike_skillshot));
+
+
+        categoryAdapter = new CategoryAdapter(categoryList);
+        recyclerView.setAdapter(categoryAdapter);
+    }
+    private void setDataRCVnewShoes(){
+
+        recyclerViewNewProducts.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+
+        newProductList = new ArrayList<>();
+        newProductList.add(new NewProduct(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
+        newProductList.add(new NewProduct(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric"));
+        newProductList.add(new NewProduct(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric"));
+        newProductList.add(new NewProduct(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric"));
+        newProductList.add(new NewProduct(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric"));
+        newProductList.add(new NewProduct(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric"));
+
+        newProductAdapter = new NewProductAdapter(newProductList);
+        recyclerViewNewProducts.setAdapter(newProductAdapter);
+    }
+
+    private void Anhxa(View view){
+        recyclerView = view.findViewById(R.id.recyclerView_category_wommen);
+        recyclerViewNewProducts = view.findViewById(R.id.recyclerViewNewProducts_women);
+    }
+
 }

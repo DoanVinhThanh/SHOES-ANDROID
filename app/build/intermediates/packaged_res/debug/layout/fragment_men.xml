@@ -3,16 +3,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.WomenFragment">
+    tools:context=".Fragment.WomenFragment"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Men fragment"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Shop By Icon"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                >
+
+            </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Win On Air"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:src="@drawable/nike_elcectric_pack"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Nike Electric Pack"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewNewProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_marginTop="16dp" />
+
+
+
+
+
+        </LinearLayout>
+
     </RelativeLayout>
 
+    </ScrollView>
 </FrameLayout>
