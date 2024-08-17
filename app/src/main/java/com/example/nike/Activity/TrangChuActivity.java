@@ -66,11 +66,12 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
             replaceFragment(new HomeFragment());
             title = "Home";
         } else if (id == R.id.nav_shop) {
-            replaceFragment(new ShopFragment());
+            Intent intent = new Intent(TrangChuActivity.this, SearchActivity.class);
+            startActivity(intent);
             title = "Shop";
         } else if (id == R.id.nav_order) {
             replaceFragment(new OrderFragment());
-            title = "Order";
+            title = "Purchases";
         } else if (id == R.id.nav_favorite) {
             replaceFragment(new FavoriteFragment());
             title = "Favorite";

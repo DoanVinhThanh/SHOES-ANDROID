@@ -30,14 +30,16 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Category category = categories.get(position % categories.size());
+        //Category category = categories.get(position % categories.size()); vô hạn
+        Category category = categories.get(position);
         holder.imageView.setImageResource(category.getImageResId());
 
     }
 
     @Override
     public int getItemCount() {
-        return Integer.MAX_VALUE;
+        //return Integer.MAX_VALUE; vô hạn
+        return categories.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

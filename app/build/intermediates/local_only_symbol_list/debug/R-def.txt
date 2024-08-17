@@ -11,7 +11,11 @@ color teal_200
 color teal_700
 color white
 drawable avarta
+drawable baseline_arrow_back_ios_24
+drawable baseline_clear_24
 drawable baseline_manage_search_24
+drawable baseline_photo_camera_24
+drawable baseline_photo_library_24
 drawable baseline_search_24
 drawable border_category
 drawable border_dark_light
@@ -41,7 +45,14 @@ drawable round_back_white
 drawable round_back_white_100
 drawable smooth_black
 drawable smooth_white
+id btn_back_shop_to_home
+id btn_bottom
+id btn_camera
+id btn_center
+id btn_photos
+id button_container
 id cart
+id clear_icon
 id drawer_layout
 id fragmentContainer
 id fragment_container
@@ -60,8 +71,10 @@ id recyclerViewNewProducts_women
 id recyclerView_category
 id recyclerView_category_wommen
 id search
+id search_icon
 id tabItem1
 id tabItem2
+id textField_search
 id textView
 id toolbar_layout
 layout activity_cart

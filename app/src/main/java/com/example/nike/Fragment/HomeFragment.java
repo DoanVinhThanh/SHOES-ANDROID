@@ -46,7 +46,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 selectTab(2);
-
             }
         });
 

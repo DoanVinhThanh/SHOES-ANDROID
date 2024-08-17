@@ -3000,7 +3000,11 @@ drawable abc_vector_test
 drawable avarta
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_arrow_back_ios_24
+drawable baseline_clear_24
 drawable baseline_manage_search_24
+drawable baseline_photo_camera_24
+drawable baseline_photo_library_24
 drawable baseline_search_24
 drawable border_category
 drawable border_dark_light
@@ -3235,7 +3239,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_back_shop_to_home
+id btn_bottom
+id btn_camera
+id btn_center
+id btn_photos
 id buttonPanel
+id button_container
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3253,6 +3263,7 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id clear_icon
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3539,6 +3550,7 @@ id search_button
 id search_close_btn
 id search_edit_frame
 id search_go_btn
+id search_icon
 id search_mag_icon
 id search_plate
 id search_src_text
@@ -3603,6 +3615,7 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textField_search
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
