@@ -3000,12 +3000,15 @@ drawable abc_vector_test
 drawable avarta
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_24
 drawable baseline_clear_24
 drawable baseline_manage_search_24
+drawable baseline_menu_24
 drawable baseline_photo_camera_24
 drawable baseline_photo_library_24
 drawable baseline_search_24
+drawable baseline_shopping_bag_24
 drawable border_category
 drawable border_dark_light
 drawable btn_checkbox_checked_mtrl
@@ -3041,6 +3044,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable img
 drawable indeterminate_static
 drawable jordan_black
 drawable jordan_white
@@ -3251,6 +3255,7 @@ id callMeasure
 id cancel_button
 id carryVelocity
 id cart
+id cart_icon
 id center
 id centerCrop
 id centerInside
