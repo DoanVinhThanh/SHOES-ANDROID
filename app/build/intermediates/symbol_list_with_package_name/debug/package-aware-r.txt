@@ -3024,6 +3024,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable heart
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3140,6 +3141,7 @@ drawable phantom_gx_2_academy_easyon_electric
 drawable phantom_luna_2_elite_electric
 drawable round_back_white
 drawable round_back_white_100
+drawable shopping_bag
 drawable smooth_black
 drawable smooth_white
 drawable test_level_drawable
@@ -3243,11 +3245,14 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnShopnow_cart
 id btn_back_shop_to_home
+id btn_bag_to_home
 id btn_bottom
 id btn_camera
 id btn_center
 id btn_photos
+id btn_setting_shop_to_home
 id buttonPanel
 id button_container
 id cache_measures
@@ -3255,7 +3260,6 @@ id callMeasure
 id cancel_button
 id carryVelocity
 id cart
-id cart_icon
 id center
 id centerCrop
 id centerInside
@@ -3330,6 +3334,10 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id empty_img_cart
+id empty_img_favorite
+id empty_msg_cart
+id empty_msg_favorite
 id end
 id endToStart
 id enterAlways
@@ -3530,6 +3538,8 @@ id recyclerViewNewProducts
 id recyclerViewNewProducts_women
 id recyclerView_category
 id recyclerView_category_wommen
+id recycler_view_cart
+id recycler_view_favorite
 id report_drawn
 id reverseSawtooth
 id right
@@ -3643,6 +3653,7 @@ id toggle
 id toolbar_layout
 id top
 id topPanel
+id total_cart
 id touch_outside
 id transitionToEnd
 id transitionToStart

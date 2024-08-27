@@ -11,9 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.nike.Adapter.CategoryAdapter;
-import com.example.nike.Adapter.NewProductAdapter;
+import com.example.nike.Adapter.ProductAdapter;
 import com.example.nike.Model.Category;
-import com.example.nike.Model.NewProduct;
+import com.example.nike.Model.Product;
 import com.example.nike.R;
 
 import java.util.ArrayList;
@@ -26,8 +26,8 @@ public class MenFragment extends Fragment {
     private CategoryAdapter categoryAdapter;
     private List<Category> categoryList;
     private RecyclerView recyclerViewNewProducts;
-    private NewProductAdapter newProductAdapter;
-    private List<NewProduct> newProductList;
+    private ProductAdapter newProductAdapter;
+    private List<Product> newProductList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -63,14 +63,14 @@ public class MenFragment extends Fragment {
         recyclerViewNewProducts.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         newProductList = new ArrayList<>();
-        newProductList.add(new NewProduct(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        newProductList.add(new NewProduct(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric"));
-        newProductList.add(new NewProduct(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric"));
-        newProductList.add(new NewProduct(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric"));
-        newProductList.add(new NewProduct(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric"));
-        newProductList.add(new NewProduct(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric"));
+        newProductList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
+        newProductList.add(new Product(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric"));
+        newProductList.add(new Product(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric"));
+        newProductList.add(new Product(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric"));
+        newProductList.add(new Product(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric"));
+        newProductList.add(new Product(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric"));
 
-        newProductAdapter = new NewProductAdapter(newProductList);
+        newProductAdapter = new ProductAdapter(newProductList);
         recyclerViewNewProducts.setAdapter(newProductAdapter);
     }
 

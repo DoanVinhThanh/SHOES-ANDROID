@@ -4,7 +4,7 @@
             "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "D:\\Androidstudio\\jbr\\caches\\transforms-3\\d32a8c30d7be8f73034961ce64374894\\transformed\\core-1.13.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-4\\c2f0dbe6012227e9072b58e46f499896\\transformed\\core-1.13.0\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Androidstudio\\jbr\\caches\\transforms-3\\44eb28a99e3b79dafed38baa81beb0c9\\transformed\\appcompat-1.7.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-4\\c38b2c1dc88209ec7e97d1658252a5b9\\transformed\\appcompat-1.7.0\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
