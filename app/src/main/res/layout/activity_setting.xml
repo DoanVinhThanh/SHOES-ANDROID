@@ -13,8 +13,15 @@
         android:layout_width="match_parent"
         android:layout_height="65dp">
 
-        <ImageView
+        <LinearLayout
             android:id="@+id/btn_setting_shop_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_back_ios_24"
@@ -27,8 +34,9 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_marginLeft="30dp">
+            android:layout_marginLeft="20dp">
         </TextView>
+        </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
     <ScrollView
         android:layout_width="wrap_content"

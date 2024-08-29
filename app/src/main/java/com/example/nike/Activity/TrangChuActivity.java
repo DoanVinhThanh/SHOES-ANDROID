@@ -60,7 +60,8 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        String title = "";
+        String title = "Home";
+
 
         if (id == R.id.nav_home) {
             replaceFragment(new HomeFragment());
@@ -75,6 +76,7 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         } else if (id == R.id.nav_favorite) {
             replaceFragment(new FavoriteFragment());
             title = "Favorite";
+
         } else if (id == R.id.nav_setting) {
             Intent intent = new Intent(TrangChuActivity.this, SettingActivity.class);
             startActivity(intent);
@@ -125,7 +127,6 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
             Intent intent = new Intent(TrangChuActivity.this , CartActivity.class);
             startActivity(intent);
         }
-
 
         return true;
     }

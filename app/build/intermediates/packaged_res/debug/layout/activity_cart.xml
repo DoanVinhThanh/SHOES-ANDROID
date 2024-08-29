@@ -12,24 +12,33 @@
             android:layout_width="match_parent"
             android:layout_height="65dp">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/btn_bag_to_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/baseline_arrow_back_ios_24"
-                >
-            </ImageView>
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24"></ImageView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="Bag"
-                android:textSize="20sp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginLeft="30dp">
-            </TextView>
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
         </androidx.appcompat.widget.Toolbar>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,24 +53,27 @@
             android:id="@+id/recycler_view_cart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="visible"/>
 
             <LinearLayout
                 android:id="@+id/total_cart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="5dp"
+                >
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#CCCCCC" />
+                    android:background="#CCCCCC"
+                    android:padding="5dp"/>
                 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="8dp">
                     
                     <TextView
                         android:layout_width="wrap_content"
@@ -78,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -95,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -113,6 +125,7 @@
             </LinearLayout>
         </LinearLayout>
         </ScrollView>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -155,5 +168,20 @@
         android:background="@drawable/border_dark_light"
         android:text="Shop now"
         android:textColor="@color/white"
-        />
+        android:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_check_out"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_dark_light"
+        android:text="Check out"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
 </RelativeLayout>

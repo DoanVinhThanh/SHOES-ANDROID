@@ -12,12 +12,20 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\nike_airforce1.jpg"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\layout_item_product.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\layout\\item_product.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\drawable_outline_edit_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\outline_edit_24.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\drawable_heart.png.flat",
@@ -66,6 +74,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\layout_bottom_sheet_quality.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\layout\\bottom_sheet_quality.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -168,8 +180,16 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\nike_skillshot.png"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\layout_item_cart.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\layout\\item_cart.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\layout_fragment_shop.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\layout\\fragment_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\drawable_baseline_keyboard_arrow_down_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\baseline_keyboard_arrow_down_24.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\layout_fragment_home.xml.flat",
@@ -248,10 +268,6 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\smooth_black.png"
     },
     {
-        "merged": "com.example.nike.app-merged_res-32:/layout_activity_cart.xml.flat",
-        "source": "com.example.nike.app-main-34:/layout/activity_cart.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\drawable_outline_home_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\drawable\\outline_home_24.xml"
     },
@@ -282,5 +298,9 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-merged_res-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.example.nike.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.nike.app-merged_res-32:/layout_activity_setting.xml.flat",
+        "source": "com.example.nike.app-main-34:/layout/activity_setting.xml"
     }
 ]
