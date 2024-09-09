@@ -43,27 +43,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:text="Win On Air"
+                android:text="Trending Shoes"
                 android:textSize="25dp"
                 android:textStyle="normal"
                 android:layout_marginTop="5dp"
                 />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="470dp"
-                android:src="@drawable/nike_elcectric_pack"
-                android:layout_marginTop="15dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="Nike Electric Pack"
-                android:textSize="25dp"
-                android:textStyle="normal"
-                android:layout_marginTop="5dp"
-                />
+
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewNewProducts"

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
+            android:name="com.example.nike.Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.nike.Activity.SettingActivity"
             android:exported="false" />
         <activity

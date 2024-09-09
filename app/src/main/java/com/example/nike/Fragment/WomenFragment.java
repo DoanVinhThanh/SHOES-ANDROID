@@ -27,7 +27,7 @@ public class WomenFragment extends Fragment {
     private List<Category> categoryList;
     private RecyclerView recyclerViewNewProducts;
     private ProductAdapter newProductAdapter;
-    private List<Product> newProductList;
+    private List<Product> ProductList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -62,15 +62,15 @@ public class WomenFragment extends Fragment {
 
         recyclerViewNewProducts.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
-        newProductList = new ArrayList<>();
-        newProductList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        newProductList.add(new Product(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric"));
-        newProductList.add(new Product(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric"));
-        newProductList.add(new Product(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric"));
-        newProductList.add(new Product(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric"));
-        newProductList.add(new Product(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric"));
+        ProductList = new ArrayList<>();
+        ProductList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric",4500000,"Men"));
+        ProductList.add(new Product(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric",4500000,"Men"));
+        ProductList.add(new Product(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric",4500000,"Men"));
+        ProductList.add(new Product(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric",4500000,"Men"));
+        ProductList.add(new Product(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric",4500000,"Men"));
+        ProductList.add(new Product(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric",4500000,"Men"));
 
-        newProductAdapter = new ProductAdapter(newProductList);
+        newProductAdapter = new ProductAdapter(ProductList);
         recyclerViewNewProducts.setAdapter(newProductAdapter);
     }
 

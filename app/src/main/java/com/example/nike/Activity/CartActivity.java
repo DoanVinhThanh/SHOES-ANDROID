@@ -81,11 +81,12 @@ public class CartActivity extends AppCompatActivity {
         recyclerView_cart.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false ));
 
         cartShoesList = new ArrayList<>();
-        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
-        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric"));
+        cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric",4500000,"Men"));
+        cartShoesList.add(new Product(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric",4500000,"Men"));
+        cartShoesList.add(new Product(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric",4500000,"Men"));
+        cartShoesList.add(new Product(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric",4500000,"Men"));
+        cartShoesList.add(new Product(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric",4500000,"Men"));
+        cartShoesList.add(new Product(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric",4500000,"Men"));
 
 
 

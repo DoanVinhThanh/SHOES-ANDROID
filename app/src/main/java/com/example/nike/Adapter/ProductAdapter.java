@@ -10,7 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.nike.Model.Product;
 import com.example.nike.R;
+
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
 
@@ -29,9 +32,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Product newproduct = products.get(position);
-        holder.imageView.setImageResource(newproduct.getImageResIdNewProduct());
-        holder.textView.setText(newproduct.getNameNewProduct());
+        Product product = products.get(position);
+        holder.productImage.setImageResource(product.getImageResIdNewProduct());
+        holder.productName.setText(product.getNameNewProduct());
+        holder.productSex.setText(product.getSexProduct());
+
+        // Format price 
+        String formattedPrice = NumberFormat.getNumberInstance(Locale.US).format(product.getPriceProduct());
+        holder.productPrice.setText(formattedPrice);
     }
 
     @Override
@@ -40,13 +48,16 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textView;
+        ImageView productImage;
+        TextView productName, productPrice, productSex;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.image_product);
-            textView = itemView.findViewById(R.id.name_product);
+            productImage = itemView.findViewById(R.id.image_product);
+            productName = itemView.findViewById(R.id.name_product);
+            productPrice = itemView.findViewById(R.id.price_product);
+            productSex = itemView.findViewById(R.id.sex_product);
+
         }
     }
 }

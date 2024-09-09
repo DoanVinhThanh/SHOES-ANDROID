@@ -3254,6 +3254,7 @@ id btn_bottom
 id btn_camera
 id btn_center
 id btn_check_out
+id btn_favorite
 id btn_photos
 id btn_setting_shop_to_home
 id buttonPanel
@@ -3536,6 +3537,7 @@ id pin
 id position
 id postLayout
 id pressed
+id price_product
 id profile_image
 id progress_circular
 id progress_horizontal
@@ -3584,6 +3586,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id sex_cart
+id sex_product
 id sharedValueSet
 id sharedValueUnset
 id shortcut

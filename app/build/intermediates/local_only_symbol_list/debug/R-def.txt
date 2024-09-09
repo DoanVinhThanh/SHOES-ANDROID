@@ -60,6 +60,7 @@ id btn_bottom
 id btn_camera
 id btn_center
 id btn_check_out
+id btn_favorite
 id btn_photos
 id btn_setting_shop_to_home
 id button_container
@@ -86,6 +87,7 @@ id nav_order
 id nav_setting
 id nav_shop
 id nav_view
+id price_product
 id profile_image
 id quantity_cart
 id quantity_list
@@ -98,6 +100,7 @@ id recycler_view_favorite
 id search
 id search_icon
 id sex_cart
+id sex_product
 id size_cart
 id tabItem1
 id tabItem2
