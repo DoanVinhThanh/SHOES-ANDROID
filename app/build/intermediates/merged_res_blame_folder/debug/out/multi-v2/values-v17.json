@@ -4,7 +4,7 @@
             "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-4\\c38b2c1dc88209ec7e97d1658252a5b9\\transformed\\appcompat-1.7.0\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\7855aafd0a6b681749ceb57e6ef33939\\transformed\\appcompat-1.7.0\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

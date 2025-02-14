@@ -13,7 +13,19 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="34">
         <activity
-            android:name=".Activity.ProfileActivity"
+            android:name=".Activity.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TrangChuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.WaitActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.SettingActivity"
@@ -25,7 +37,7 @@
             android:name=".Activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.TrangChuActivity"
+            android:name=".Activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

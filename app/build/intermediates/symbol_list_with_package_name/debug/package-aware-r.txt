@@ -3000,6 +3000,8 @@ drawable abc_vector_test
 drawable avarta
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
+drawable background1
 drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_24
 drawable baseline_clear_24
@@ -3010,6 +3012,8 @@ drawable baseline_photo_camera_24
 drawable baseline_photo_library_24
 drawable baseline_search_24
 drawable baseline_shopping_bag_24
+drawable bg_sign_in
+drawable bg_sign_up
 drawable border_category
 drawable border_dark_light
 drawable btn_checkbox_checked_mtrl
@@ -3048,6 +3052,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable img
 drawable indeterminate_static
+drawable jordan
 drawable jordan_black
 drawable jordan_white
 drawable m3_avd_hide_password
@@ -3109,6 +3114,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nike
 drawable nike_airforce1
 drawable nike_airjordan1
 drawable nike_blazer
@@ -3257,6 +3263,8 @@ id btn_check_out
 id btn_favorite
 id btn_photos
 id btn_setting_shop_to_home
+id btn_wait_sign_in
+id btn_wait_sign_up
 id buttonPanel
 id button_container
 id cache_measures
@@ -3348,6 +3356,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id et_birth_date
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3416,6 +3425,7 @@ id linear_quantity_cart
 id listMode
 id list_item
 id m3_side_sheet
+id main
 id marquee
 id masked
 id match_constraint
@@ -3593,6 +3603,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signup_to_signin
 id sin
 id size_cart
 id skipCollapsed
@@ -3628,6 +3639,7 @@ id submit_area
 id supportScrollUp
 id tabItem1
 id tabItem2
+id tabItem3
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3818,9 +3830,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cart
+layout activity_forget_password
 layout activity_search
 layout activity_setting
+layout activity_sign_in
+layout activity_sign_up
+layout activity_splash
 layout activity_trang_chu
+layout activity_wait
 layout bottom_sheet_quality
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3840,6 +3857,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_favorite
 layout fragment_home
+layout fragment_kid
 layout fragment_men
 layout fragment_order
 layout fragment_shop

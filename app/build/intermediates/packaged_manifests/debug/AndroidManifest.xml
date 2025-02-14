@@ -28,7 +28,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
-            android:name="com.example.nike.Activity.ProfileActivity"
+            android:name="com.example.nike.Activity.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.TrangChuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.WaitActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.SettingActivity"
@@ -40,7 +52,7 @@
             android:name="com.example.nike.Activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.TrangChuActivity"
+            android:name="com.example.nike.Activity.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

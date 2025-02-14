@@ -3,28 +3,17 @@ package com.example.nike.Fragment;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
-
+import androidx.fragment.app.Fragment;
 import com.example.nike.R;
-
 
 public class HomeFragment extends Fragment {
 
-    private TextView tablayout1, tablayout2;
+    private TextView tablayout1, tablayout2, tablayout3;
     private int selectedTabNumber = 1;
-
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,93 +21,70 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         Anhxa(view);
 
+        // Mặc định hiển thị MenFragment khi vào màn hình
         getActivity().getSupportFragmentManager().beginTransaction()
-                        .setReorderingAllowed(true)
-                                .replace(R.id.fragmentContainer, MenFragment.class, null)
-                                        .commit();
-        tablayout1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectTab(1);
-            }
-        });
-        tablayout2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectTab(2);
-            }
-        });
+                .replace(R.id.fragmentContainer, new MenFragment())
+                .commit();
 
-
+        // Xử lý sự kiện click cho từng tab
+        tablayout1.setOnClickListener(v -> selectTab(1));
+        tablayout2.setOnClickListener(v -> selectTab(2));
+        tablayout3.setOnClickListener(v -> selectTab(3));
 
         return view;
     }
-    private void selectTab(int tabNumber){
-        TextView selectedTextview1;
-        TextView nonselectedTextview2;
 
-        if(tabNumber == 1){
-            selectedTextview1 = tablayout1;
-            nonselectedTextview2 = tablayout2;
+    private void selectTab(int tabNumber) {
+        TextView selectedTextView, nonSelectedTextView1, nonSelectedTextView2;
+        Fragment selectedFragment;
 
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .replace(R.id.fragmentContainer, MenFragment.class, null)
-                    .commit();
-        } else {
-                selectedTextview1 = tablayout2;
-                nonselectedTextview2 = tablayout1;
-
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .setReorderingAllowed(true)
-                        .replace(R.id.fragmentContainer, WomenFragment.class, null)
-                        .commit();
-
-        }
-        float slideto = (tabNumber - selectedTabNumber) * selectedTextview1.getWidth();
-        TranslateAnimation translateAnimation = new TranslateAnimation(0,slideto,0, 0);
-
-        translateAnimation.setDuration(100);
-
-        if(selectedTabNumber == 1){
-            tablayout1.startAnimation(translateAnimation);
-        }else {
-            tablayout2.startAnimation(translateAnimation);
+        switch (tabNumber) {
+            case 1:
+                selectedTextView = tablayout1;
+                nonSelectedTextView1 = tablayout2;
+                nonSelectedTextView2 = tablayout3;
+                selectedFragment = new MenFragment();
+                break;
+            case 2:
+                selectedTextView = tablayout2;
+                nonSelectedTextView1 = tablayout1;
+                nonSelectedTextView2 = tablayout3;
+                selectedFragment = new WomenFragment();
+                break;
+            case 3:
+                selectedTextView = tablayout3;
+                nonSelectedTextView1 = tablayout1;
+                nonSelectedTextView2 = tablayout2;
+                selectedFragment = new KidFragment();
+                break;
+            default:
+                return;
         }
 
-        translateAnimation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
+        // Cập nhật FragmentContainer với fragment tương ứng
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragmentContainer, selectedFragment)
+                .commit();
 
-            }
+        // Cập nhật UI của tab được chọn (không có hiệu ứng)
+        selectedTextView.setBackgroundResource(R.drawable.round_back_white_100);
+        selectedTextView.setTypeface(null, Typeface.BOLD);
+        selectedTextView.setTextColor(Color.BLACK);
 
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                selectedTextview1.setBackgroundResource(R.drawable.round_back_white_100);
-                selectedTextview1.setTypeface(null, Typeface.BOLD);
-                selectedTextview1.setTextColor(Color.BLACK);
+        nonSelectedTextView1.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        nonSelectedTextView1.setTextColor(Color.parseColor("#C0C0C0"));
+        nonSelectedTextView1.setTypeface(null, Typeface.NORMAL);
 
-                nonselectedTextview2.setBackgroundColor(getResources().getColor(android.R.color.transparent));
-                nonselectedTextview2.setTextColor(Color.WHITE);
-                nonselectedTextview2.setTypeface(null, Typeface.NORMAL);
-
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
-        });
+        nonSelectedTextView2.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        nonSelectedTextView2.setTextColor(Color.parseColor("#C0C0C0"));
+        nonSelectedTextView2.setTypeface(null, Typeface.NORMAL);
 
         selectedTabNumber = tabNumber;
-
     }
 
-    private void Anhxa(View view){
-
+    private void Anhxa(View view) {
         tablayout1 = view.findViewById(R.id.tabItem1);
         tablayout2 = view.findViewById(R.id.tabItem2);
-
+        tablayout3 = view.findViewById(R.id.tabItem3);
     }
 }
