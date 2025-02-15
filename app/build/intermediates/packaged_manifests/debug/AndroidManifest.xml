@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="25"
-        android:targetSdkVersion="35" />
+        android:targetSdkVersion="34" />
 
     <permission
         android:name="com.example.nike.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -31,16 +31,13 @@
             android:name="com.example.nike.Activity.SignInActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SignInActivity1"
-            android:exported="false" />
-        <activity
             android:name="com.example.nike.Activity.SignUpActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.TrangChuActivity"
+            android:name="com.example.nike.Activity.SplashActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.WaitActivity"
@@ -55,7 +52,7 @@
             android:name="com.example.nike.Activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SplashActivity"
+            android:name="com.example.nike.Activity.TrangChuActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
