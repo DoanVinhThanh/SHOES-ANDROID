@@ -3261,8 +3261,12 @@ id btn_camera
 id btn_center
 id btn_check_out
 id btn_favorite
+id btn_forgot_signin
+id btn_forgot_signup
 id btn_photos
 id btn_setting_shop_to_home
+id btn_signin_forgot
+id btn_signin_signup
 id btn_wait_sign_in
 id btn_wait_sign_up
 id buttonPanel

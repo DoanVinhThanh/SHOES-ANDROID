@@ -24,6 +24,7 @@ public class WaitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(WaitActivity.this,SignInActivity.class);
                 startActivity(intent1);
+                finish();
             }
         });
         btnWaitSignUp.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,7 @@ public class WaitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(WaitActivity.this,SignUpActivity.class);
                 startActivity(intent2);
+                finish();
             }
         });
     }

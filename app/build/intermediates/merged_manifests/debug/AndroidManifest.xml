@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="25"
-        android:targetSdkVersion="34" />
+        android:targetSdkVersion="35" />
 
     <permission
         android:name="com.example.nike.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -29,6 +29,9 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
             android:name="com.example.nike.Activity.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.SignInActivity1"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.SignUpActivity"
