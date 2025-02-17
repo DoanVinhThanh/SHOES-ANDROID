@@ -37,7 +37,7 @@
             android:name="com.example.nike.Activity.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.TrangChuActivity"
+            android:name="com.example.nike.Activity.SplashActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.WaitActivity"
@@ -52,7 +52,7 @@
             android:name="com.example.nike.Activity.SearchActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SplashActivity"
+            android:name="com.example.nike.Activity.TrangChuActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
