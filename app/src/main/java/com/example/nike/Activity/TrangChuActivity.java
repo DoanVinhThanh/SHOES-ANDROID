@@ -83,6 +83,7 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         } else if (id == R.id.nav_logout) {
             Intent intent = new Intent(TrangChuActivity.this, SignInActivity.class);
             startActivity(intent);
+            finish();
         }
 
         if (getSupportActionBar() != null) {

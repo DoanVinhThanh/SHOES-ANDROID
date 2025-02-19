@@ -6,11 +6,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.nike.R;
 
 public class ForgetPasswordActivity extends AppCompatActivity {
     TextView btnForgotSignIn, btnForgotSignUp;
+    AppCompatButton btnForget;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +34,19 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                 finish();
             }
         });
+        btnForget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ForgetPasswordActivity.this, TrangChuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void Anhxa() {
         btnForgotSignIn = findViewById(R.id.btn_forgot_signin);
         btnForgotSignUp = findViewById(R.id.btn_forgot_signup);
+        btnForget = findViewById(R.id.btn_forget);
 
     }
 }

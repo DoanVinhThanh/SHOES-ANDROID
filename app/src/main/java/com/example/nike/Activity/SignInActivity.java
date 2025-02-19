@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -15,6 +16,7 @@ import com.example.nike.R;
 
 public class SignInActivity extends AppCompatActivity {
     TextView btnSignInForgot , btnSignInSignUp;
+    AppCompatButton btnSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +38,18 @@ public class SignInActivity extends AppCompatActivity {
                 finish();
             }
         });
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignInActivity.this, TrangChuActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
     public void Anhxa(){
         btnSignInForgot = findViewById(R.id.btn_signin_forgot);
         btnSignInSignUp = findViewById(R.id.btn_signin_signup);
+        btnSignIn = findViewById(R.id.btn_sign_in);
     }
 }

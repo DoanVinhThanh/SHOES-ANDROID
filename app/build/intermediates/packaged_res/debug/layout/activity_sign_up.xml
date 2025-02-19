@@ -50,6 +50,7 @@
                 android:maxLines="1"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:background="@drawable/bg_editext"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -65,6 +66,7 @@
                 android:maxLines="1"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:background="@drawable/bg_editext"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -83,6 +85,7 @@
                 android:maxLines="1"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:background="@drawable/bg_editext"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -101,6 +104,7 @@
                 android:maxLines="1"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
+                android:background="@drawable/bg_editext"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -117,7 +121,8 @@
             android:focusable="false"
             android:clickable="true"
             android:paddingStart="16dp"
-            android:paddingEnd="16dp"/>
+            android:paddingEnd="16dp"
+                android:background="@drawable/bg_editext"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -128,15 +133,16 @@
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             />
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Đăng ký"
-            android:textColor="@color/white"
-            android:background="@drawable/bg_sign_up"
+            android:layout_height="41dp"
             android:layout_gravity="end"
-            />
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_sign_up"
+            android:text="Đăng ký"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

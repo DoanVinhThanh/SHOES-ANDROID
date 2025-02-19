@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.nike.R;
 import com.google.android.material.textfield.TextInputEditText;
@@ -19,6 +20,8 @@ public class SignUpActivity extends AppCompatActivity {
     private TextInputEditText etBirthDate;
      public TextView btnSignUpToSignIn;
 
+     AppCompatButton btnSignUp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         etBirthDate = findViewById(R.id.et_birth_date);
         btnSignUpToSignIn = findViewById(R.id.signup_to_signin);
+        btnSignUp = findViewById(R.id.btn_sign_up);
         btnSignUpToSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +39,13 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
         etBirthDate.setOnClickListener(view -> showDatePicker());
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignUpActivity.this, TrangChuActivity.class));
+            }
+        });
     }
 
     private void showDatePicker() {
