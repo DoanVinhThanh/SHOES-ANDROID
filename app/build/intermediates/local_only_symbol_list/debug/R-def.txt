@@ -160,6 +160,7 @@ id tabItem1
 id tabItem2
 id tabItem3
 id textField_search
+id toolbar
 id toolbar_layout
 id total_cart
 id tvColorName
@@ -171,6 +172,7 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_forget_password
 layout activity_product_detail
+layout activity_profile
 layout activity_quan_ly_danh_muc
 layout activity_quan_ly_san_pham
 layout activity_search

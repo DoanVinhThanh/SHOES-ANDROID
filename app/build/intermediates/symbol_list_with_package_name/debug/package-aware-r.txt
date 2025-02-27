@@ -3719,6 +3719,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id toolbar_layout
 id top
 id topPanel
@@ -3881,6 +3882,7 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_forget_password
 layout activity_product_detail
+layout activity_profile
 layout activity_quan_ly_danh_muc
 layout activity_quan_ly_san_pham
 layout activity_search
