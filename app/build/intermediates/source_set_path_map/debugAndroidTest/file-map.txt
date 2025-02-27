@@ -1,0 +1,5 @@
+com.example.nike.test.app-core-1.6.1-0 C:\Users\admin\.gradle\caches\transforms-3\69d6a4307e2b43b47123090d08a85efc\transformed\core-1.6.1\res
+com.example.nike.test.app-androidTest-1 D:\Document\GitHub\SHOES-ANDROID\app\build\generated\res\resValues\androidTest\debug
+com.example.nike.test.app-mergeDebugAndroidTestResources-2 D:\Document\GitHub\SHOES-ANDROID\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.nike.test.app-mergeDebugAndroidTestResources-3 D:\Document\GitHub\SHOES-ANDROID\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.nike.test.app-merged_res-4 D:\Document\GitHub\SHOES-ANDROID\app\build\intermediates\merged_res\debugAndroidTest

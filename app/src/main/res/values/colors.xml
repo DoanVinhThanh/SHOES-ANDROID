@@ -10,5 +10,8 @@
     <color name="lavender">#8692f7</color>
     <color name="grey">#D4D5D6</color>
     <color name="dark_grey">#606060</color>
+    <color name="blue">#3399FF</color>
+    <color name="red">#FF0000</color>
+
 
 </resources>
