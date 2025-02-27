@@ -39,6 +39,8 @@ drawable brand4
 drawable brand5
 drawable brand6
 drawable btn_sign_out
+drawable delete
+drawable edit_text
 drawable heart
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -83,9 +85,13 @@ drawable round_back_white_100
 drawable shopping_bag
 drawable smooth_black
 drawable smooth_white
+id btnAddCategory
 id btnAddToCart
 id btnBack
 id btnCart
+id btnChooseImage
+id btnDelete
+id btnEdit
 id btnFavorite
 id btnSelectSize
 id btnShopnow_cart
@@ -114,6 +120,7 @@ id cart
 id clear_icon
 id color_cart
 id drawer_layout
+id edtCategoryName
 id empty_img_cart
 id empty_img_favorite
 id empty_msg_cart
@@ -124,7 +131,9 @@ id fragment_container
 id image_cart
 id image_category
 id image_product
+id imgCategory
 id imgColor
+id imgPreview
 id imgProduct
 id linear_quantity_cart
 id main
@@ -141,6 +150,7 @@ id price_product
 id profile_image
 id quantity_cart
 id quantity_list
+id recyclerView
 id recyclerViewNewProducts
 id recyclerViewNewProducts_kids
 id recyclerViewNewProducts_women
@@ -160,8 +170,10 @@ id tabItem1
 id tabItem2
 id tabItem3
 id textField_search
+id toolbar
 id toolbar_layout
 id total_cart
+id tvCategoryName
 id tvColorName
 id tvProductDescription
 id tvProductName
@@ -171,6 +183,7 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_forget_password
 layout activity_product_detail
+layout activity_profile
 layout activity_quan_ly_danh_muc
 layout activity_quan_ly_san_pham
 layout activity_search
@@ -181,6 +194,7 @@ layout activity_splash
 layout activity_trang_chu
 layout activity_wait
 layout bottom_sheet_quality
+layout dialog_category
 layout fragment_favorite
 layout fragment_home
 layout fragment_kid
@@ -188,6 +202,7 @@ layout fragment_men
 layout fragment_order
 layout fragment_shop
 layout fragment_women
+layout item_admin_category
 layout item_cart
 layout item_category
 layout item_color
@@ -199,8 +214,14 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string close_nav
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string open_nav
+string project_id
 style BUTTON
 style Base.Theme.Nike
 style SCREEN

@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.example.nike.R;
 
 public class AdminTrangChuActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class AdminTrangChuActivity extends AppCompatActivity {
         btnQuanLyDanhMuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminTrangChuActivity.this,QuanLyDanhMucActivity.class);
+                Intent intent = new Intent(AdminTrangChuActivity.this, QuanLyDanhMucActivity.class);
                 startActivity(intent);
             }
         });

@@ -31,13 +31,10 @@
             android:name="com.example.nike.Activity.User.TrangChuActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.Admin.QuanLyDanhMucActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.nike.Activity.Admin.QuanLySanPhamActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.Admin.AdminTrangChuActivity"
+            android:name="com.example.nike.Activity.Admin.QuanLyDanhMucActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.User.SignInActivity"
@@ -65,6 +62,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.User.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.Admin.AdminTrangChuActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

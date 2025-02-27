@@ -16,13 +16,10 @@
             android:name=".Activity.User.TrangChuActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.Admin.QuanLyDanhMucActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity.Admin.QuanLySanPhamActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.Admin.AdminTrangChuActivity"
+            android:name=".Activity.Admin.QuanLyDanhMucActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.User.SignInActivity"
@@ -50,6 +47,9 @@
             android:exported="false" />
         <activity
             android:name=".Activity.User.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.AdminTrangChuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
