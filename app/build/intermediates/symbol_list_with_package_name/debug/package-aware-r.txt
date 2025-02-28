@@ -3004,6 +3004,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background
 drawable background1
+drawable bag
 drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_24
 drawable baseline_clear_24

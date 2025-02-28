@@ -140,6 +140,10 @@
         "source": "com.example.nike.app-main-36:/layout/item_admin_category.xml"
     },
     {
+        "merged": "com.example.nike.app-merged_res-34:/drawable_bag.png.flat",
+        "source": "com.example.nike.app-main-36:/drawable/bag.png"
+    },
+    {
         "merged": "com.example.nike.app-merged_res-34:/menu_toolbar_menu.xml.flat",
         "source": "com.example.nike.app-main-36:/menu/toolbar_menu.xml"
     },
