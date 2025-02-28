@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "618220335156",
+    "project_id": "doanbangiay",
+    "storage_bucket": "doanbangiay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618220335156:android:a4dade97f82d035876da61",
+        "android_client_info": {
+          "package_name": "com.example.nike"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWWE9PU1zdbCtJCaSUXK9ULKIApff4IRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

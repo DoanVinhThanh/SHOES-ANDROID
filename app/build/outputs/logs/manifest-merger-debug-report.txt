@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-3\a6bbec8dec6557d050657cbdd9824452\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-3\e18c9e83ee9bf9222c458bc45d57d1e0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\admin\.gradle\caches\transforms-3\8e3ece052b8a4ee45ccb59d7439f120d\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -57,8 +57,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\admin\.
 	xmlns:android
 		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-49:19
-INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-49:19
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-60:19
+INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:5:5-60:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-3\a6bbec8dec6557d050657cbdd9824452\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\admin\.gradle\caches\transforms-3\a6bbec8dec6557d050657cbdd9824452\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-3\e18c9e83ee9bf9222c458bc45d57d1e0\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -99,70 +99,94 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ad
 		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:13:9-65
 	android:dataExtractionRules
 		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.nike.Activity.SignInActivity
+activity#com.example.nike.Activity.User.TrangChuActivity
 ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:16:13-52
-activity#com.example.nike.Activity.SignUpActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:19:9-21:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:16:13-59
+activity#com.example.nike.Activity.Admin.QuanLyDanhMucActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:20:13-52
-activity#com.example.nike.Activity.ForgetPasswordActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:22:9-24:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:19:13-65
+activity#com.example.nike.Activity.Admin.QuanLySanPhamActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:24:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:23:13-60
-activity#com.example.nike.Activity.SplashActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:25:9-27:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:22:13-65
+activity#com.example.nike.Activity.Admin.AdminTrangChuActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:26:13-52
-activity#com.example.nike.Activity.WaitActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:28:9-30:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:25:13-65
+activity#com.example.nike.Activity.User.SignInActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:29:13-50
-activity#com.example.nike.Activity.SettingActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:31:9-33:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:28:13-57
+activity#com.example.nike.Activity.User.SignUpActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:32:13-53
-activity#com.example.nike.Activity.CartActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:34:9-36:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:31:13-57
+activity#com.example.nike.Activity.User.ForgetPasswordActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:35:13-50
-activity#com.example.nike.Activity.SearchActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:37:9-39:40
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:34:13-65
+activity#com.example.nike.Activity.User.SplashActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:38:13-52
-activity#com.example.nike.Activity.TrangChuActivity
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:40:9-48:20
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:37:13-57
+activity#com.example.nike.Activity.User.WaitActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:41:13-54
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:40:13-55
+activity#com.example.nike.Activity.User.SettingActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:42:9-44:40
+	android:exported
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:44:13-37
+	android:name
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:43:13-58
+activity#com.example.nike.Activity.User.CartActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:46:13-55
+activity#com.example.nike.Activity.User.SearchActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:48:9-50:40
+	android:exported
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:50:13-37
+	android:name
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:49:13-57
+activity#com.example.nike.Activity.User.ProductDetailActivity
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:51:9-59:20
+	android:exported
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:52:13-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:43:13-47:29
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:44:17-69
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:44:25-66
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:57:17-77
 	android:name
-		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:57:27-74
 uses-sdk
 INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Document\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml

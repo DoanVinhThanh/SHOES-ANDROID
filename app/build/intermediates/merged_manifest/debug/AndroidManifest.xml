@@ -28,31 +28,43 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
-            android:name="com.example.nike.Activity.SignInActivity"
+            android:name="com.example.nike.Activity.User.TrangChuActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SignUpActivity"
+            android:name="com.example.nike.Activity.Admin.QuanLyDanhMucActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.ForgetPasswordActivity"
+            android:name="com.example.nike.Activity.Admin.QuanLySanPhamActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SplashActivity"
+            android:name="com.example.nike.Activity.Admin.AdminTrangChuActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.WaitActivity"
+            android:name="com.example.nike.Activity.User.SignInActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SettingActivity"
+            android:name="com.example.nike.Activity.User.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.CartActivity"
+            android:name="com.example.nike.Activity.User.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.SearchActivity"
+            android:name="com.example.nike.Activity.User.SplashActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.TrangChuActivity"
+            android:name="com.example.nike.Activity.User.WaitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.User.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.User.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.User.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.User.ProductDetailActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

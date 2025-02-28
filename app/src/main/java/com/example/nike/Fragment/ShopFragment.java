@@ -1,6 +1,5 @@
 package com.example.nike.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,12 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.ImageView;
 
-import com.example.nike.Activity.TrangChuActivity;
 import com.example.nike.R;
-import com.google.android.material.textfield.TextInputEditText;
 
 
 public class ShopFragment extends Fragment {
