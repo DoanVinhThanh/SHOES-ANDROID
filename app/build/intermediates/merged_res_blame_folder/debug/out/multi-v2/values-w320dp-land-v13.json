@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.nike.app-mergeDebugResources-38:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\a6bbec8dec6557d050657cbdd9824452\\transformed\\material-1.12.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\4fe191d5fffc61bd49717b35bde7ad26\\transformed\\material-1.12.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

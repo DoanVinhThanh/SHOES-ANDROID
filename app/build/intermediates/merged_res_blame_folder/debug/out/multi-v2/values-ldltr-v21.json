@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.nike.app-mergeDebugResources-30:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.nike.app-mergeDebugResources-38:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\7855aafd0a6b681749ceb57e6ef33939\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\8aae3ede25c073ac97a1798e736fd551\\transformed\\appcompat-1.7.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
