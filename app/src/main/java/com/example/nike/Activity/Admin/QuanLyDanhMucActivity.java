@@ -26,7 +26,7 @@ import java.util.List;
 
 public class QuanLyDanhMucActivity extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
-
+    ImageView btnBackCategoryAdmin;
     private RecyclerView recyclerView;
     private CategoryAdminAdapter adapter;
     private List<AdminCategory> categoryList;
@@ -39,11 +39,18 @@ public class QuanLyDanhMucActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quan_ly_danh_muc);
-
+        btnBackCategoryAdmin = findViewById(R.id.btn_back_category_admin);
         recyclerView = findViewById(R.id.recyclerView);
         btnAddCategory = findViewById(R.id.btnAddCategory);
         databaseHelper = new DatabaseHelper(this);
-
+        btnBackCategoryAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuanLyDanhMucActivity.this,AdminTrangChuActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         loadCategories();

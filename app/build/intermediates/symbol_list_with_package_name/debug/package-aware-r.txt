@@ -3186,6 +3186,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id CategoryProduct
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3281,6 +3282,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAddCategory
+id btnAddProduct
 id btnAddToCart
 id btnBack
 id btnCart
@@ -3288,14 +3290,19 @@ id btnChooseImage
 id btnDelete
 id btnEdit
 id btnFavorite
+id btnSave
 id btnSelectSize
 id btnShopnow_cart
+id btn_back_category_admin
+id btn_back_product_admin
 id btn_back_shop_to_home
 id btn_bag_to_home
 id btn_bottom
 id btn_camera
 id btn_center
 id btn_check_out
+id btn_delete_product
+id btn_edit_product
 id btn_favorite
 id btn_forget
 id btn_forgot_signin
@@ -3317,6 +3324,7 @@ id callMeasure
 id cancel_button
 id carryVelocity
 id cart
+id category_admin_product
 id center
 id centerCrop
 id centerInside
@@ -3402,6 +3410,9 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etProductName
+id etProductPrice
+id etProductSize
 id et_birth_date
 id exitUntilCollapsed
 id expand_activities_button
@@ -3454,6 +3465,7 @@ id imgCategory
 id imgColor
 id imgPreview
 id imgProduct
+id img_admin_product
 id immediateStop
 id included
 id indeterminate
@@ -3536,6 +3548,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_admin_product
 id name_cart
 id name_product
 id nav_favorite
@@ -3598,6 +3611,7 @@ id pin
 id position
 id postLayout
 id pressed
+id price_admin_product
 id price_product
 id profile_image
 id progress_circular
@@ -3614,6 +3628,7 @@ id recyclerViewNewProducts_women
 id recyclerView_category
 id recyclerView_category_kids
 id recyclerView_category_wommen
+id recyclerView_product
 id recycler_view_cart
 id recycler_view_colors
 id recycler_view_favorite
@@ -3660,6 +3675,7 @@ id showHome
 id showTitle
 id signup_to_signin
 id sin
+id size_admin_product
 id size_cart
 id skipCollapsed
 id skipped
@@ -3892,6 +3908,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_edit_product
 layout activity_admin_trang_chu
 layout activity_cart
 layout activity_edit_profile
@@ -3935,6 +3952,7 @@ layout fragment_women
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_admin_category
+layout item_admin_product
 layout item_cart
 layout item_category
 layout item_color

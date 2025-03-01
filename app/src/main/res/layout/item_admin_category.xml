@@ -18,6 +18,7 @@
         android:layout_weight="1"
         android:textSize="16sp"
         android:padding="8dp" />
+
     <LinearLayout
         android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"

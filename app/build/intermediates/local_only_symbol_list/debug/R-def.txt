@@ -86,7 +86,9 @@ drawable shopping_bag
 drawable smooth_black
 drawable smooth_white
 drawable trash
+id CategoryProduct
 id btnAddCategory
+id btnAddProduct
 id btnAddToCart
 id btnBack
 id btnCart
@@ -94,14 +96,19 @@ id btnChooseImage
 id btnDelete
 id btnEdit
 id btnFavorite
+id btnSave
 id btnSelectSize
 id btnShopnow_cart
+id btn_back_category_admin
+id btn_back_product_admin
 id btn_back_shop_to_home
 id btn_bag_to_home
 id btn_bottom
 id btn_camera
 id btn_center
 id btn_check_out
+id btn_delete_product
+id btn_edit_product
 id btn_favorite
 id btn_forget
 id btn_forgot_signin
@@ -118,6 +125,7 @@ id btn_wait_sign_in
 id btn_wait_sign_up
 id button_container
 id cart
+id category_admin_product
 id clear_icon
 id color_cart
 id drawer_layout
@@ -126,6 +134,9 @@ id empty_img_cart
 id empty_img_favorite
 id empty_msg_cart
 id empty_msg_favorite
+id etProductName
+id etProductPrice
+id etProductSize
 id et_birth_date
 id fragmentContainer
 id fragment_container
@@ -136,8 +147,10 @@ id imgCategory
 id imgColor
 id imgPreview
 id imgProduct
+id img_admin_product
 id linear_quantity_cart
 id main
+id name_admin_product
 id name_cart
 id name_product
 id nav_favorite
@@ -147,6 +160,7 @@ id nav_order
 id nav_setting
 id nav_shop
 id nav_view
+id price_admin_product
 id price_product
 id profile_image
 id quantity_cart
@@ -158,6 +172,7 @@ id recyclerViewNewProducts_women
 id recyclerView_category
 id recyclerView_category_kids
 id recyclerView_category_wommen
+id recyclerView_product
 id recycler_view_cart
 id recycler_view_colors
 id recycler_view_favorite
@@ -166,6 +181,7 @@ id search_icon
 id sex_cart
 id sex_product
 id signup_to_signin
+id size_admin_product
 id size_cart
 id tabItem1
 id tabItem2
@@ -180,6 +196,7 @@ id tvProductDescription
 id tvProductName
 id tvProductPrice
 id tvProductTitle
+layout activity_add_edit_product
 layout activity_admin_trang_chu
 layout activity_cart
 layout activity_edit_profile
@@ -205,6 +222,7 @@ layout fragment_order
 layout fragment_shop
 layout fragment_women
 layout item_admin_category
+layout item_admin_product
 layout item_cart
 layout item_category
 layout item_color
