@@ -23,6 +23,12 @@
 
         @Override
         public void onCreate(SQLiteDatabase db) {
+            db.execSQL("CREATE TABLE IF NOT EXISTS users (" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "email TEXT UNIQUE, " +  // Thêm cột email
+                    "name TEXT, " +
+                    "dob TEXT, " +
+                    "password TEXT)");
             String createCategoryTable = "CREATE TABLE categories (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     "name TEXT, " +
@@ -46,6 +52,7 @@
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("DROP TABLE IF EXISTS categories");
+            db.execSQL("DROP TABLE IF EXISTS users");
             db.execSQL("DROP TABLE IF EXISTS product");
             onCreate(db);
         }
@@ -183,6 +190,49 @@
             cursor.close();
             db.close();
             return product;
+        }
+        public Boolean insertData(String email,String name,String dob ,String password){
+            SQLiteDatabase Mydatabase =this.getWritableDatabase();
+            ContentValues contentValues =new ContentValues();
+            contentValues.put("email", email);
+            contentValues.put("name", name);
+            contentValues.put("dob", dob);
+            contentValues.put("password", password);
+            long result=Mydatabase.insert("users",null, contentValues);
+            if (result == -1) {
+                System.out.println("Lỗi: Không thể chèn dữ liệu vào database!");
+                return false;
+            } else {
+                System.out.println("Thêm dữ liệu thành công!");
+                return true;
+            }
+        }
+        public Boolean checkEmail(String email){
+            SQLiteDatabase MyDatabase=this.getWritableDatabase();
+            Cursor cursor=MyDatabase.rawQuery("Select * from users where email= ?",new String[]{email});
+            if (cursor.getCount()>0){
+                return  true;
+            }else {
+                return false;
+            }
+        }
+        public Boolean CheckEmailPassword(String email,String password){
+            SQLiteDatabase MyDatabase=this.getWritableDatabase();
+            Cursor cursor=MyDatabase.rawQuery("Select * from users where email =? and password=?",new String[]{email,password});
+            if (cursor.getCount()>0){
+                return  true;
+            }else {
+                return false;
+            }
+        }
+        public int updatepass(String email, String password) {
+            SQLiteDatabase db = this.getWritableDatabase();
+            ContentValues values = new ContentValues();
+            values.put("password", password);
+
+            int result = db.update("users", values, "email=?", new String[]{email});
+            db.close();
+            return result;
         }
 
     }

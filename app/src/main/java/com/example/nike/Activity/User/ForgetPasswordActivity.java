@@ -4,49 +4,58 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.nike.DatabaseHelper;
 import com.example.nike.R;
+import com.example.nike.databinding.ActivityForgetPasswordBinding;
 
 public class ForgetPasswordActivity extends AppCompatActivity {
-    TextView btnForgotSignIn, btnForgotSignUp;
-    AppCompatButton btnForget;
+    ActivityForgetPasswordBinding binding;
+    DatabaseHelper databaseHelper;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
-        Anhxa();
-        btnForgotSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ForgetPasswordActivity.this,SignInActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btnForgotSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ForgetPasswordActivity.this, SignUpActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btnForget.setOnClickListener(new View.OnClickListener() {
+        binding=ActivityForgetPasswordBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        databaseHelper=new DatabaseHelper(this);
+        binding.btnForget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ForgetPasswordActivity.this, TrangChuActivity.class);
-                startActivity(intent);
+                try {
+                    String email = binding.forgotEmail.getText().toString();
+                    String pass = binding.newPassword.getText().toString();
+                    String repass = binding.confirmPassword.getText().toString();
+                    if (email.equals("") || pass.equals("") || repass.equals("")) {
+                        Toast.makeText(ForgetPasswordActivity.this, "vui lòng điền thông tin", Toast.LENGTH_SHORT).show();
+                    } else {
+                        if (pass.equals(repass)) {
+                            int updatepass = databaseHelper.updatepass(email, pass);
+                            if (updatepass == 1) {
+                                binding.forgotEmail.setText("");
+                                binding.confirmPassword.setText("");
+                                Toast.makeText(ForgetPasswordActivity.this, "đồi mật khẩu thành công", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(ForgetPasswordActivity.this, SignInActivity.class);
+                                startActivity(intent);
+                                finish();
+                            } else {
+                                Toast.makeText(ForgetPasswordActivity.this, "tài khoản không tồn tại", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Toast.makeText(ForgetPasswordActivity.this, "Mật khẩu không trùng khớp", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+                catch (Exception e){
+                    Toast.makeText(ForgetPasswordActivity.this, "Out of bound"+e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
-    }
-
-    public void Anhxa() {
-        btnForgotSignIn = findViewById(R.id.btn_forgot_signin);
-        btnForgotSignUp = findViewById(R.id.btn_forgot_signup);
-        btnForget = findViewById(R.id.btn_forget);
-
     }
 }

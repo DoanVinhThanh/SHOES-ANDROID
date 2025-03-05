@@ -3347,6 +3347,7 @@ id collapseActionView
 id color_cart
 id compress
 id confirm_button
+id confirm_password
 id constraint
 id container
 id content
@@ -3431,6 +3432,7 @@ id fixed
 id flip
 id floating
 id forever
+id forgot_email
 id fragmentContainer
 id fragment_container
 id fragment_container_view_tag
@@ -3478,6 +3480,8 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_confirm_password
+id layout_new_password
 id left
 id leftToRight
 id legacy
@@ -3487,6 +3491,8 @@ id linear
 id linear_quantity_cart
 id listMode
 id list_item
+id login_email
+id login_password
 id m3_side_sheet
 id main
 id marquee
@@ -3568,6 +3574,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_password
 id noScroll
 id noState
 id none
@@ -3673,6 +3680,10 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signup_confirm
+id signup_email
+id signup_name
+id signup_password
 id signup_to_signin
 id sin
 id size_admin_product

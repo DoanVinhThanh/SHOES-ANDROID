@@ -128,6 +128,7 @@ id cart
 id category_admin_product
 id clear_icon
 id color_cart
+id confirm_password
 id drawer_layout
 id edtCategoryName
 id empty_img_cart
@@ -138,6 +139,7 @@ id etProductName
 id etProductPrice
 id etProductSize
 id et_birth_date
+id forgot_email
 id fragmentContainer
 id fragment_container
 id image_cart
@@ -148,7 +150,11 @@ id imgColor
 id imgPreview
 id imgProduct
 id img_admin_product
+id layout_confirm_password
+id layout_new_password
 id linear_quantity_cart
+id login_email
+id login_password
 id main
 id name_admin_product
 id name_cart
@@ -160,6 +166,7 @@ id nav_order
 id nav_setting
 id nav_shop
 id nav_view
+id new_password
 id price_admin_product
 id price_product
 id profile_image
@@ -180,6 +187,10 @@ id search
 id search_icon
 id sex_cart
 id sex_product
+id signup_confirm
+id signup_email
+id signup_name
+id signup_password
 id signup_to_signin
 id size_admin_product
 id size_cart

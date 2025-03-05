@@ -4,48 +4,58 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.nike.DatabaseHelper;
 import com.example.nike.R;
+import com.example.nike.databinding.ActivitySignInBinding;
 
 public class SignInActivity extends AppCompatActivity {
-    TextView btnSignInForgot , btnSignInSignUp;
-    AppCompatButton btnSignIn;
+    ActivitySignInBinding binding;
+    DatabaseHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
-        Anhxa();
-        btnSignInForgot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this, ForgetPasswordActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btnSignInSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        binding=ActivitySignInBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        databaseHelper=new DatabaseHelper(this);
+        binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignInActivity.this, TrangChuActivity.class);
-                startActivity(intent);
-                finish();
+                String email=binding.loginEmail.getText().toString();
+                String password=binding.loginPassword.getText().toString();
+                if(email.equals("")||password.equals(""))
+                    Toast.makeText(SignInActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                else {
+                    Boolean checkCredentials = databaseHelper.CheckEmailPassword(email, password);
+                    if(checkCredentials==true){
+                        Toast.makeText(SignInActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(getApplicationContext(), TrangChuActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(SignInActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
-    }
-    public void Anhxa(){
-        btnSignInForgot = findViewById(R.id.btn_signin_forgot);
-        btnSignInSignUp = findViewById(R.id.btn_signin_signup);
-        btnSignIn = findViewById(R.id.btn_sign_in);
+        binding.btnSigninSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(SignInActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.btnSigninForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignInActivity.this, ForgetPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

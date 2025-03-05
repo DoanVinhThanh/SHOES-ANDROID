@@ -4,7 +4,7 @@
             "outputFile": "com.example.nike.app-mergeDebugResources-38:/values-sq/values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\8aae3ede25c073ac97a1798e736fd551\\transformed\\appcompat-1.7.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\trant\\.gradle\\caches\\transforms-3\\8aae3ede25c073ac97a1798e736fd551\\transformed\\appcompat-1.7.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\61ffe7408e8b151e1612d8591731ea1b\\transformed\\play-services-basement-18.3.0\\res\\values-sq\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "124",
-                        "endOffsets": "319"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "4495",
-                        "endColumns": "128",
-                        "endOffsets": "4619"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\4fe191d5fffc61bd49717b35bde7ad26\\transformed\\material-1.12.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\trant\\.gradle\\caches\\transforms-3\\4fe191d5fffc61bd49717b35bde7ad26\\transformed\\material-1.12.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\91475043000438317afd16ba24b41ec3\\transformed\\core-1.13.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\trant\\.gradle\\caches\\transforms-3\\91475043000438317afd16ba24b41ec3\\transformed\\core-1.13.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -71,6 +54,23 @@
                         "startOffsets": "3448,3547,3649,3747,3844,3952,4063,10081",
                         "endColumns": "98,101,97,96,107,110,121,100",
                         "endOffsets": "3542,3644,3742,3839,3947,4058,4180,10177"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\trant\\.gradle\\caches\\transforms-3\\61ffe7408e8b151e1612d8591731ea1b\\transformed\\play-services-basement-18.3.0\\res\\values-sq\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "124",
+                        "endOffsets": "319"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "4495",
+                        "endColumns": "128",
+                        "endOffsets": "4619"
                     }
                 }
             ]

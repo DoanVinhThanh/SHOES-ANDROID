@@ -31,7 +31,7 @@
             android:name=".Activity.Admin.QuanLyDanhMucActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.User.SignInActivity"
+            android:name=".Activity.Admin.AdminTrangChuActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.User.SignUpActivity"
@@ -55,7 +55,7 @@
             android:name=".Activity.User.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.Admin.AdminTrangChuActivity"
+            android:name=".Activity.User.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

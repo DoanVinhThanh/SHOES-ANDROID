@@ -44,6 +44,7 @@
             android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textEmailAddress"
@@ -60,6 +61,7 @@
             android:hint="Họ và tên">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="text"
@@ -79,6 +81,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
@@ -98,6 +101,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_confirm"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
@@ -118,10 +122,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="none"
-            android:focusable="false"
-            android:clickable="true"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:background="@drawable/bg_editext"/>
         </com.google.android.material.textfield.TextInputLayout>
 

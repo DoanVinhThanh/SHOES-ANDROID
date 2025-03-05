@@ -2,66 +2,93 @@ package com.example.nike.Activity.User;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.nike.DatabaseHelper;
 import com.example.nike.R;
+import com.example.nike.databinding.ActivitySignUpBinding;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Locale;
 
 public class SignUpActivity extends AppCompatActivity {
-    private TextInputEditText etBirthDate;
-     public TextView btnSignUpToSignIn;
-
-     AppCompatButton btnSignUp;
-
+    ActivitySignUpBinding binding;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_sign_up);
-        etBirthDate = findViewById(R.id.et_birth_date);
-        btnSignUpToSignIn = findViewById(R.id.signup_to_signin);
-        btnSignUp = findViewById(R.id.btn_sign_up);
-        btnSignUpToSignIn.setOnClickListener(new View.OnClickListener() {
+        binding=ActivitySignUpBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        databaseHelper=new DatabaseHelper(this);
+        binding.etBirthDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUpActivity.this,SignInActivity.class);
-                startActivity(intent);
-                finish();
+                showDatePicker();
             }
         });
-        etBirthDate.setOnClickListener(view -> showDatePicker());
-
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SignUpActivity.this, TrangChuActivity.class));
+                String email= binding.signupEmail.getText().toString();
+                String name = binding.signupName.getText().toString();
+                String dob = binding.etBirthDate.getText().toString();
+                String password = binding.signupPassword.getText().toString();
+                String confirmPassword= binding.signupConfirm.getText().toString();
+
+                if(name.equals("")||dob.equals("")||email.equals("")|| password.equals("")||confirmPassword.equals(""))
+                    Toast.makeText(SignUpActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
+                else{
+                    if (password.equals(confirmPassword)){
+                        Boolean checkUserEmail=databaseHelper.checkEmail(email);
+                        if(checkUserEmail==false){
+                            Boolean insert = databaseHelper.insertData(email, name, dob, password); if(insert==true){
+                                Toast.makeText(SignUpActivity.this, "Signup Successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent=new Intent(getApplicationContext(),SignInActivity.class);
+                                startActivity(intent);
+                            }else {
+                                Toast.makeText(SignUpActivity.this, "Signup Failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }else {
+                            Toast.makeText(SignUpActivity.this, "User already exists, Please login", Toast.LENGTH_SHORT).show();
+                        }
+                    }else {
+                        Toast.makeText(SignUpActivity.this, "Invalid password", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
+        binding.signupToSignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),SignInActivity.class);
+                startActivity(intent);
             }
         });
     }
-
     private void showDatePicker() {
-        Calendar calendar = Calendar.getInstance();
+        final android.icu.util.Calendar calendar = android.icu.util.Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
         DatePickerDialog datePickerDialog = new DatePickerDialog(
                 this,
-                (view, year, month, dayOfMonth) -> {
-                    Calendar selectedDate = Calendar.getInstance();
-                    selectedDate.set(year, month, dayOfMonth);
-                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-                    etBirthDate.setText(sdf.format(selectedDate.getTime()));
-                },
-                calendar.get(Calendar.YEAR),
-                calendar.get(Calendar.MONTH),
-                calendar.get(Calendar.DAY_OF_MONTH)
-        );
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int selectedYear, int selectedMonth, int selectedDay) {
+                        String dob = selectedDay + "/" + (selectedMonth + 1) + "/" + selectedYear;
+                        binding.etBirthDate.setText(dob);
+                    }
+                }, year, month, day);
+
         datePickerDialog.show();
     }
 }
