@@ -32,18 +32,14 @@ public final class ItemProductBinding implements ViewBinding {
   @NonNull
   public final TextView priceProduct;
 
-  @NonNull
-  public final TextView sexProduct;
-
   private ItemProductBinding(@NonNull LinearLayout rootView, @NonNull ImageView btnFavorite,
       @NonNull ImageView imageProduct, @NonNull TextView nameProduct,
-      @NonNull TextView priceProduct, @NonNull TextView sexProduct) {
+      @NonNull TextView priceProduct) {
     this.rootView = rootView;
     this.btnFavorite = btnFavorite;
     this.imageProduct = imageProduct;
     this.nameProduct = nameProduct;
     this.priceProduct = priceProduct;
-    this.sexProduct = sexProduct;
   }
 
   @Override
@@ -97,14 +93,8 @@ public final class ItemProductBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sex_product;
-      TextView sexProduct = ViewBindings.findChildViewById(rootView, id);
-      if (sexProduct == null) {
-        break missingId;
-      }
-
       return new ItemProductBinding((LinearLayout) rootView, btnFavorite, imageProduct, nameProduct,
-          priceProduct, sexProduct);
+          priceProduct);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

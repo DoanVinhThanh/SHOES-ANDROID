@@ -3636,6 +3636,7 @@ id recyclerView_category
 id recyclerView_category_kids
 id recyclerView_category_wommen
 id recyclerView_product
+id recyclerView_search_products
 id recycler_view_cart
 id recycler_view_colors
 id recycler_view_favorite
@@ -3673,7 +3674,6 @@ id select_dialog_listview
 id selected
 id selection_type
 id sex_cart
-id sex_product
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3781,6 +3781,7 @@ id tvProductDescription
 id tvProductName
 id tvProductPrice
 id tvProductTitle
+id txtCategoryTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3929,6 +3930,7 @@ layout activity_profile
 layout activity_quan_ly_danh_muc
 layout activity_quan_ly_san_pham
 layout activity_search
+layout activity_search_product
 layout activity_setting
 layout activity_sign_in
 layout activity_sign_up

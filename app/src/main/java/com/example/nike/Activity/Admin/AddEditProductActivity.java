@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -38,7 +39,6 @@ public class AddEditProductActivity extends AppCompatActivity {
     private DatabaseHelper dbHelper;
     private Uri imageUri;
     private int productId = -1;
-    private String imageUrlProduct = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +54,15 @@ public class AddEditProductActivity extends AppCompatActivity {
         dbHelper = new DatabaseHelper(this);
 
         loadCategoriesIntoSpinner();
-
         imgProduct.setOnClickListener(v -> openImagePicker());
         btnSave.setOnClickListener(v -> saveProduct());
+
+        if (savedInstanceState != null) {
+            imageUri = savedInstanceState.getParcelable("imageUri");
+            if (imageUri != null) {
+                Glide.with(this).load(imageUri).into(imgProduct);
+            }
+        }
 
         if (getIntent().hasExtra("productId")) {
             productId = getIntent().getIntExtra("productId", -1);
@@ -65,19 +71,18 @@ public class AddEditProductActivity extends AppCompatActivity {
     }
 
     private void openImagePicker() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Chọn ảnh"), PICK_IMAGE_REQUEST);
+        Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, PICK_IMAGE_REQUEST);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null && data.getData() != null) {
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null) {
             imageUri = data.getData();
-            imgProduct.setImageURI(imageUri);
-            imageUrlProduct = imageUri.toString(); // Lưu đường dẫn ảnh vào biến
+            if (imageUri != null) {
+                Glide.with(this).load(imageUri).into(imgProduct);
+            }
         }
     }
 
@@ -87,6 +92,7 @@ public class AddEditProductActivity extends AppCompatActivity {
         for (AdminCategory category : categoryList) {
             categoryNames.add(category.getName());
         }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categoryNames);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorySpinner.setAdapter(adapter);
@@ -108,13 +114,15 @@ public class AddEditProductActivity extends AppCompatActivity {
         String price = etProductPrice.getText().toString().trim();
         String sizeText = etProductSize.getText().toString().trim();
 
-        if (name.isEmpty() || price.isEmpty() || sizeText.isEmpty() || selectedCategoryId == -1 || imageUrlProduct.isEmpty()) {
-            Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin và chọn ảnh", Toast.LENGTH_SHORT).show();
+        if (name.isEmpty() || price.isEmpty() || sizeText.isEmpty() || selectedCategoryId == -1) {
+            Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
             return;
         }
 
         List<String> sizes = Arrays.asList(sizeText.split(","));
-        ProductAdmin product = new ProductAdmin(productId, name, price, sizes, selectedCategoryId, imageUrlProduct);
+        String imagePath = (imageUri != null) ? imageUri.toString() : (productId != -1 ? dbHelper.getProductById(productId).getImageUrlProduct() : "");
+
+        ProductAdmin product = new ProductAdmin(productId, name, price, sizes, selectedCategoryId, imagePath);
 
         if (productId == -1) {
             dbHelper.addProduct(product);
@@ -123,6 +131,7 @@ public class AddEditProductActivity extends AppCompatActivity {
             dbHelper.updateProduct(product);
             Toast.makeText(this, "Đã cập nhật sản phẩm", Toast.LENGTH_SHORT).show();
         }
+
         finish();
     }
 
@@ -134,10 +143,9 @@ public class AddEditProductActivity extends AppCompatActivity {
             etProductSize.setText(String.join(",", product.getSizeProduct()));
             setCategorySpinnerSelection(product.getIdCategory());
 
-            // Hiển thị ảnh khi chỉnh sửa sản phẩm
-            imageUrlProduct = product.getImageUrlProduct();
-            if (!imageUrlProduct.isEmpty()) {
-                Glide.with(this).load(imageUrlProduct).into(imgProduct);
+            if (product.getImageUrlProduct() != null && !product.getImageUrlProduct().isEmpty()) {
+                imageUri = Uri.parse(product.getImageUrlProduct());
+                Glide.with(this).load(imageUri).into(imgProduct);
             }
         }
     }
@@ -149,5 +157,11 @@ public class AddEditProductActivity extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable("imageUri", imageUri);
     }
 }

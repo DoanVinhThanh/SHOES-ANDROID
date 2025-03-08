@@ -4,7 +4,7 @@
             "outputFile": "com.example.nike.app-mergeDebugResources-38:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\trant\\.gradle\\caches\\transforms-3\\8aae3ede25c073ac97a1798e736fd551\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-3\\8aae3ede25c073ac97a1798e736fd551\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
