@@ -46,13 +46,13 @@ public class SearchProductActivity extends AppCompatActivity {
         }
 
         // Hiển thị danh sách sản phẩm theo danh mục
-        loadProductsByCategory(categoryId);
+        //loadProductsByCategory(categoryId);
     }
 
-    private void loadProductsByCategory(int categoryId) {
-        List<ProductAdmin> productList = databaseHelper.getProductsByCategory(categoryId);
-        recyclerViewProducts.setLayoutManager(new GridLayoutManager(this, 2));
-        productAdapter = new ProductAdapter(productList);
-        recyclerViewProducts.setAdapter(productAdapter);
-    }
+//    private void loadProductsByCategory(int categoryId) {
+//        List<ProductAdmin> productList = databaseHelper.getProductsByCategory(categoryId);
+//        recyclerViewProducts.setLayoutManager(new GridLayoutManager(this, 2));
+//        productAdapter = new ProductAdapter(productList);
+//        recyclerViewProducts.setAdapter(productAdapter);
+//    }
 }

@@ -35,7 +35,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         Product product = products.get(position);
         holder.productImage.setImageResource(product.getImageResIdNewProduct());
         holder.productName.setText(product.getNameNewProduct());
-        holder.productSex.setText(product.getSexProduct());
+
 
         // Format price 
         String formattedPrice = NumberFormat.getNumberInstance(Locale.US).format(product.getPriceProduct());
@@ -56,7 +56,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
             productImage = itemView.findViewById(R.id.image_product);
             productName = itemView.findViewById(R.id.name_product);
             productPrice = itemView.findViewById(R.id.price_product);
-            productSex = itemView.findViewById(R.id.sex_product);
 
         }
     }
