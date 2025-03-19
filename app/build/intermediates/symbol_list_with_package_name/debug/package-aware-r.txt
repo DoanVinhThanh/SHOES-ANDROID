@@ -3941,8 +3941,8 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_edit_profile
 layout activity_forget_password
-layout activity_order_payment
 layout activity_orders
+layout activity_orders_payment
 layout activity_product_detail
 layout activity_profile
 layout activity_quan_ly_danh_muc
@@ -3953,7 +3953,7 @@ layout activity_setting
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
-layout activity_successful_payment
+layout activity_success_payment
 layout activity_trang_chu
 layout activity_wait
 layout bottom_sheet_quality
@@ -3974,6 +3974,10 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_category
+layout fragment_choxacnhan
+layout fragment_dagiao
+layout fragment_dahuy
+layout fragment_danggiao
 layout fragment_favorite
 layout fragment_home
 layout fragment_kid
