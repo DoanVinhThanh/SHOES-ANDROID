@@ -24,7 +24,7 @@
             android:layout_gravity="top|end"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/heart"
+            android:src="@drawable/baseline_favorite_border_24"
             />
     </FrameLayout>
 

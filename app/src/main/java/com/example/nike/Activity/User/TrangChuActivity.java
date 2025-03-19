@@ -14,7 +14,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
+import com.example.nike.Activity.ProfileActivity;
 import com.example.nike.Fragment.FavoriteFragment;
 import com.example.nike.Fragment.HomeFragment;
 import com.example.nike.Fragment.OrderFragment;
@@ -27,37 +30,37 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
     Toolbar toolbar1;
     NavigationView navigationView;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trang_chu);
         Anhxa();
 
-        //side menu
+        // Side menu
         setSupportActionBar(toolbar1);
-
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this , drawerLayout, toolbar1, R.string.open_nav, R.string.close_nav);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar1, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-        if (savedInstanceState == null){
+
+        if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
 
-
-
+        // Xử lý sự kiện click vào nav_header
+        View headerView = navigationView.getHeaderView(0);
+        LinearLayout navHeaderLayout = headerView.findViewById(R.id.nav_header_layout);
+        navHeaderLayout.setOnClickListener(v -> {
+            Intent intent = new Intent(TrangChuActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
     }
-
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         String title = "Home";
-
 
         if (id == R.id.nav_home) {
             replaceFragment(new HomeFragment());
@@ -72,7 +75,6 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         } else if (id == R.id.nav_favorite) {
             replaceFragment(new FavoriteFragment());
             title = "Favorite";
-
         } else if (id == R.id.nav_setting) {
             Intent intent = new Intent(TrangChuActivity.this, SettingActivity.class);
             startActivity(intent);
@@ -90,23 +92,22 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         return true;
     }
 
-
-
     @Override
     public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
     }
 
-    private void replaceFragment(Fragment fragment){
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container,fragment);
+        fragmentTransaction.replace(R.id.fragment_container, fragment);
         fragmentTransaction.commit();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu, menu);
@@ -118,22 +119,20 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         int id = item.getItemId();
 
         if (id == R.id.search) {
-            Intent intent = new Intent(TrangChuActivity.this , SearchActivity.class);
+            Intent intent = new Intent(TrangChuActivity.this, SearchActivity.class);
             startActivity(intent);
         }
         if (id == R.id.cart) {
-            Intent intent = new Intent(TrangChuActivity.this , CartActivity.class);
+            Intent intent = new Intent(TrangChuActivity.this, CartActivity.class);
             startActivity(intent);
         }
 
         return true;
     }
 
-    public void Anhxa(){
+    public void Anhxa() {
         toolbar1 = findViewById(R.id.toolbar_layout);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
-
-
     }
 }

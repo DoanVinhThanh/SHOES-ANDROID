@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="35" />
 
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="35" />
 
     <application
         android:allowBackup="true"
@@ -16,10 +18,22 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="34">
         <activity
-            android:name=".Activity.Admin.AddEditProductActivity"
+            android:name=".Successful_Payment_activity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdersActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.User.TrangChuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.AddEditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.User.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditProfile"
             android:exported="false" />
         <activity
             android:name=".Activity.User.ProductDetailActivity"
@@ -55,7 +69,10 @@
             android:name=".Activity.User.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.User.SignInActivity"
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Order_payment"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

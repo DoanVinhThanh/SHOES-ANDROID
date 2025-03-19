@@ -18,7 +18,11 @@ drawable background1
 drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_24
 drawable baseline_clear_24
+drawable baseline_favorite_24
+drawable baseline_favorite_border_24
 drawable baseline_keyboard_arrow_down_24
+drawable baseline_local_phone_24
+drawable baseline_man_24
 drawable baseline_manage_search_24
 drawable baseline_menu_24
 drawable baseline_photo_camera_24
@@ -26,7 +30,10 @@ drawable baseline_photo_library_24
 drawable baseline_search_24
 drawable baseline_shopping_bag_24
 drawable bg_btn_admin
+drawable bg_button_rounded
+drawable bg_edit
 drawable bg_editext
+drawable bg_rounded
 drawable bg_selected
 drawable bg_sign_in
 drawable bg_sign_up
@@ -48,6 +55,7 @@ drawable jordan
 drawable jordan_black
 drawable jordan_white
 drawable nike
+drawable nike_air
 drawable nike_airforce1
 drawable nike_airjordan1
 drawable nike_blazer
@@ -85,6 +93,7 @@ drawable round_back_white_100
 drawable shopping_bag
 drawable smooth_black
 drawable smooth_white
+drawable success
 drawable trash
 id CategoryProduct
 id btnAddCategory
@@ -130,6 +139,7 @@ id clear_icon
 id color_cart
 id confirm_password
 id drawer_layout
+id edit_profile
 id edtCategoryName
 id empty_img_cart
 id empty_img_favorite
@@ -160,6 +170,7 @@ id name_admin_product
 id name_cart
 id name_product
 id nav_favorite
+id nav_header_layout
 id nav_home
 id nav_logout
 id nav_order
@@ -167,6 +178,7 @@ id nav_setting
 id nav_shop
 id nav_view
 id new_password
+id order_profile
 id price_admin_product
 id price_product
 id profile_image
@@ -185,6 +197,7 @@ id recycler_view_colors
 id recycler_view_favorite
 id search
 id search_icon
+id settings_profile
 id sex_cart
 id sex_product
 id signup_confirm
@@ -212,6 +225,8 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_edit_profile
 layout activity_forget_password
+layout activity_order_payment
+layout activity_orders
 layout activity_product_detail
 layout activity_profile
 layout activity_quan_ly_danh_muc
@@ -221,6 +236,7 @@ layout activity_setting
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
+layout activity_successful_payment
 layout activity_trang_chu
 layout activity_wait
 layout bottom_sheet_quality
