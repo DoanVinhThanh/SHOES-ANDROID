@@ -60,20 +60,20 @@
 36-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:18:9-65
 37        <activity
 37-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:20:9-22:40
-38            android:name="com.example.nike.Successful_Payment_activity"
-38-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:13-56
+38            android:name="com.example.nike.SuccessPayment"
+38-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:21:13-43
 39            android:exported="false" />
 39-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:22:13-37
 40        <activity
 40-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:23:9-25:40
-41            android:name="com.example.nike.OrdersActivity"
-41-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:24:13-43
+41            android:name="com.example.nike.Orders"
+41-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:24:13-35
 42            android:exported="false" />
 42-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:25:13-37
 43        <activity
 43-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:26:9-28:40
-44            android:name="com.example.nike.Activity.User.TrangChuActivity"
-44-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:27:13-59
+44            android:name="com.example.nike.OrdersPayment"
+44-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:27:13-42
 45            android:exported="false" />
 45-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:28:13-37
 46        <activity
@@ -168,8 +168,8 @@
 90-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:73:13-37
 91        <activity
 91-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:74:9-82:20
-92            android:name="com.example.nike.Order_payment"
-92-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:75:13-42
+92            android:name="com.example.nike.Activity.User.TrangChuActivity"
+92-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:75:13-59
 93            android:exported="true" >
 93-->C:\Users\trant\AndroidStudioProjects\GitHub\SHOES-ANDROID\app\src\main\AndroidManifest.xml:76:13-36
 94            <intent-filter>

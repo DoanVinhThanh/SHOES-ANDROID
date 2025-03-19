@@ -35,13 +35,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
-            android:name="com.example.nike.Successful_Payment_activity"
+            android:name="com.example.nike.SuccessPayment"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.OrdersActivity"
+            android:name="com.example.nike.Orders"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.User.TrangChuActivity"
+            android:name="com.example.nike.OrdersPayment"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.Admin.AddEditProductActivity"
@@ -89,7 +89,7 @@
             android:name="com.example.nike.Activity.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Order_payment"
+            android:name="com.example.nike.Activity.User.TrangChuActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
