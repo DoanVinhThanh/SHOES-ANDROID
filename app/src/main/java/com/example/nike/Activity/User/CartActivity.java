@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.nike.Adapter.CartAdapter;
 import com.example.nike.Model.Product;
+import com.example.nike.Order_payment;
 import com.example.nike.R;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class CartActivity extends AppCompatActivity {
     private RecyclerView recyclerView_cart;
     private TextView tvEmptyMessage_cart;
     private ImageView imgEmpty_cart;
-    private AppCompatButton btn_Shopnow_cart, btn_Check_out;
+    private AppCompatButton btnShopNowCart, btn_Check_out;
 
     LinearLayout Linear_total_cart, Linear_btn_bag_to_home;
     private CartAdapter adapter;
@@ -40,7 +41,7 @@ public class CartActivity extends AppCompatActivity {
 
         showlistcart();
 
-        btn_Shopnow_cart.setOnClickListener(new View.OnClickListener() {
+        btnShopNowCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CartActivity.this , TrangChuActivity.class);
@@ -56,6 +57,14 @@ public class CartActivity extends AppCompatActivity {
                 finishAffinity();
             }
         });
+        btn_Check_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CartActivity.this , Order_payment.class);
+                startActivity(intent);
+                finishAffinity();
+            }
+        });
 
 
 
@@ -65,7 +74,7 @@ public class CartActivity extends AppCompatActivity {
         recyclerView_cart = findViewById(R.id.recycler_view_cart);
         tvEmptyMessage_cart = findViewById(R.id.empty_msg_cart);
         imgEmpty_cart = findViewById(R.id.empty_img_cart);
-        btn_Shopnow_cart = findViewById(R.id.btnShopnow_cart);
+        btnShopNowCart = findViewById(R.id.btnShopnow_cart);
         Linear_total_cart = findViewById(R.id.total_cart);
         Linear_btn_bag_to_home = findViewById(R.id.btn_bag_to_home);
         btn_Check_out = findViewById(R.id.btn_check_out);
@@ -80,9 +89,7 @@ public class CartActivity extends AppCompatActivity {
         cartShoesList.add(new Product(R.drawable.nike_vaporfly_3_electric, "Nike Vaporfly 3 Electric",4500000,"Men"));
         cartShoesList.add(new Product(R.drawable.nike_infinityrn_4_electric, "Nike Infinityrn 4 Electric",4500000,"Men"));
         cartShoesList.add(new Product(R.drawable.nike_invicible_3_electric, "Nike Invicible 3 Electric",4500000,"Men"));
-        cartShoesList.add(new Product(R.drawable.nike_pegasus_41_electric, "Nike Pegasus 41 Electric",4500000,"Men"));
-        cartShoesList.add(new Product(R.drawable.phantom_gx_2_academy_easyon_electric, "Phantom 2 Esyon Electric",4500000,"Men"));
-        cartShoesList.add(new Product(R.drawable.phantom_luna_2_elite_electric, "Phantom Luna 2 Elite Electric",4500000,"Men"));
+
 
 
 
@@ -97,7 +104,7 @@ public class CartActivity extends AppCompatActivity {
         if (cartShoesList.isEmpty()) {
             tvEmptyMessage_cart.setVisibility(View.VISIBLE);
             imgEmpty_cart.setVisibility(View.VISIBLE);
-            btn_Shopnow_cart.setVisibility(View.VISIBLE);
+            btnShopNowCart.setVisibility(View.VISIBLE);
             recyclerView_cart.setVisibility(View.GONE);
             Linear_total_cart.setVisibility(View.GONE);
             btn_Check_out.setVisibility(View.GONE);
@@ -105,7 +112,7 @@ public class CartActivity extends AppCompatActivity {
         } else {
             tvEmptyMessage_cart.setVisibility(View.GONE);
             imgEmpty_cart.setVisibility(View.GONE);
-            btn_Shopnow_cart.setVisibility(View.GONE);
+            btnShopNowCart.setVisibility(View.GONE);
             recyclerView_cart.setVisibility(View.VISIBLE);
             Linear_total_cart.setVisibility(View.VISIBLE);
             btn_Check_out.setVisibility(View.VISIBLE);

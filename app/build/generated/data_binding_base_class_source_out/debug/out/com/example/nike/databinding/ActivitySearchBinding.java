@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.nike.R;
@@ -26,12 +25,6 @@ public final class ActivitySearchBinding implements ViewBinding {
   public final ImageView btnBackShopToHome;
 
   @NonNull
-  public final AppCompatButton btnCamera;
-
-  @NonNull
-  public final AppCompatButton btnPhotos;
-
-  @NonNull
   public final LinearLayout buttonContainer;
 
   @NonNull
@@ -41,13 +34,10 @@ public final class ActivitySearchBinding implements ViewBinding {
   public final AutoCompleteTextView textFieldSearch;
 
   private ActivitySearchBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView btnBackShopToHome, @NonNull AppCompatButton btnCamera,
-      @NonNull AppCompatButton btnPhotos, @NonNull LinearLayout buttonContainer,
+      @NonNull ImageView btnBackShopToHome, @NonNull LinearLayout buttonContainer,
       @NonNull ImageView clearIcon, @NonNull AutoCompleteTextView textFieldSearch) {
     this.rootView = rootView;
     this.btnBackShopToHome = btnBackShopToHome;
-    this.btnCamera = btnCamera;
-    this.btnPhotos = btnPhotos;
     this.buttonContainer = buttonContainer;
     this.clearIcon = clearIcon;
     this.textFieldSearch = textFieldSearch;
@@ -86,18 +76,6 @@ public final class ActivitySearchBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_camera;
-      AppCompatButton btnCamera = ViewBindings.findChildViewById(rootView, id);
-      if (btnCamera == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_photos;
-      AppCompatButton btnPhotos = ViewBindings.findChildViewById(rootView, id);
-      if (btnPhotos == null) {
-        break missingId;
-      }
-
       id = R.id.button_container;
       LinearLayout buttonContainer = ViewBindings.findChildViewById(rootView, id);
       if (buttonContainer == null) {
@@ -116,8 +94,8 @@ public final class ActivitySearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySearchBinding((RelativeLayout) rootView, btnBackShopToHome, btnCamera,
-          btnPhotos, buttonContainer, clearIcon, textFieldSearch);
+      return new ActivitySearchBinding((RelativeLayout) rootView, btnBackShopToHome,
+          buttonContainer, clearIcon, textFieldSearch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

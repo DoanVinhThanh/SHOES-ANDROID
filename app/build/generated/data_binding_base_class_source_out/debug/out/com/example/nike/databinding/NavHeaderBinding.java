@@ -20,10 +20,15 @@ public final class NavHeaderBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final LinearLayout navHeader;
+
+  @NonNull
   public final CircleImageView profileImage;
 
-  private NavHeaderBinding(@NonNull LinearLayout rootView, @NonNull CircleImageView profileImage) {
+  private NavHeaderBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout navHeader,
+      @NonNull CircleImageView profileImage) {
     this.rootView = rootView;
+    this.navHeader = navHeader;
     this.profileImage = profileImage;
   }
 
@@ -54,13 +59,15 @@ public final class NavHeaderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      LinearLayout navHeader = (LinearLayout) rootView;
+
       id = R.id.profile_image;
       CircleImageView profileImage = ViewBindings.findChildViewById(rootView, id);
       if (profileImage == null) {
         break missingId;
       }
 
-      return new NavHeaderBinding((LinearLayout) rootView, profileImage);
+      return new NavHeaderBinding((LinearLayout) rootView, navHeader, profileImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

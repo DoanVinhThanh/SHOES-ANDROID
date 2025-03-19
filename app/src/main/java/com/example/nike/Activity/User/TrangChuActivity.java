@@ -14,7 +14,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
+import com.example.nike.Activity.ProfileActivity;
 import com.example.nike.Fragment.FavoriteFragment;
 import com.example.nike.Fragment.HomeFragment;
 import com.example.nike.Fragment.OrderFragment;
@@ -26,6 +28,7 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
     private DrawerLayout drawerLayout;
     Toolbar toolbar1;
     NavigationView navigationView;
+    LinearLayout navHeader;
 
 
 
@@ -133,6 +136,15 @@ public class TrangChuActivity extends AppCompatActivity implements NavigationVie
         toolbar1 = findViewById(R.id.toolbar_layout);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
+
+        navHeader = navigationView.getHeaderView(0).findViewById(R.id.nav_header);
+
+        navHeader.setOnClickListener(v -> {
+            Intent intent = new Intent(TrangChuActivity.this, ProfileActivity.class);
+            startActivity(intent);
+            drawerLayout.closeDrawer(GravityCompat.START);
+        });
+
 
 
     }

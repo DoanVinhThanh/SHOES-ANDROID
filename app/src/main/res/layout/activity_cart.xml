@@ -166,7 +166,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/border_dark_light"
-        android:text="Shop now"
+        android:text="Tiếp tục mua sắm"
         android:textColor="@color/white"
         android:visibility="visible"/>
 
@@ -181,7 +181,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/border_dark_light"
-        android:text="Check out"
+        android:text="Thanh toán"
         android:textColor="@color/white"
         android:visibility="gone"/>
 </RelativeLayout>

@@ -18,6 +18,15 @@ import java.util.Locale;
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
 
     private List<Product> products;
+    private OnItemClickListener onItemClickListener;
+
+    public interface OnItemClickListener {
+        void onItemClick(Product product);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.onItemClickListener = listener;
+    }
 
     public ProductAdapter(List<Product> products) {
         this.products = products;
@@ -40,6 +49,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         // Format price 
         String formattedPrice = NumberFormat.getNumberInstance(Locale.US).format(product.getPriceProduct());
         holder.productPrice.setText(formattedPrice);
+        holder.itemView.setOnClickListener(v -> {
+            if (onItemClickListener != null) {
+                onItemClickListener.onItemClick(product);
+            }
+        });
     }
 
     @Override

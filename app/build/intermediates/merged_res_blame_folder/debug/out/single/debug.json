@@ -16,28 +16,32 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\fragment_favorite.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_pegasus_41_electric.png.flat",
-        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_pegasus_41_electric.png"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_border_dark_light.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\border_dark_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_pegasus_41_electric.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_pegasus_41_electric.png"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_outline_exit_to_app_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\outline_exit_to_app_24.xml"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_successful_payment.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_successful_payment.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_btn_sign_out.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\btn_sign_out.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_pen.png.flat",
-        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\pen.png"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_edit_profile.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_pen.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\pen.png"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_border_category.xml.flat",
@@ -64,12 +68,12 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\fragment_men.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_fragment_kid.xml.flat",
-        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\fragment_kid.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_outline_edit_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\outline_edit_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_fragment_kid.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\fragment_kid.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_wm3.png.flat",
@@ -124,6 +128,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\jordan_white.png"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_orders_ic.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\orders_ic.png"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_search_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_search_24.xml"
     },
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_air.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_air.png"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_invicible_3_electric.png.flat",
@@ -180,6 +192,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_kids3.png"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_bg_button_rounded.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\bg_button_rounded.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_sign_up.xml"
     },
@@ -190,10 +206,6 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_bg_sign_in.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\bg_sign_in.xml"
-    },
-    {
-        "merged": "com.example.nike.app-merged_res-40:/layout_item_category.xml.flat",
-        "source": "com.example.nike.app-main-42:/layout/item_category.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_smooth_white.png.flat",
@@ -212,6 +224,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\outline_favorite_border_24.xml"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_bg_rounded.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\bg_rounded.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_wm2.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_wm2.png"
     },
@@ -226,6 +242,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_keyboard_arrow_down_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_keyboard_arrow_down_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_favorite_border_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_favorite_border_24.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -244,12 +264,12 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\item_color.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_wait.xml.flat",
-        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_wait.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_cart.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_wait.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_wait.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_img.png.flat",
@@ -396,8 +416,20 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_clear_24.xml"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_favorite_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_success.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\success.png"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_item_product.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\item_product.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_man_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_man_24.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\xml_backup_rules.xml.flat",
@@ -412,6 +444,10 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_skillshot.png"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_orders.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_orders.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_outline_settings_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\outline_settings_24.xml"
     },
@@ -424,8 +460,16 @@
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\nike_kids4.png"
     },
     {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_local_phone_24.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_local_phone_24.xml"
+    },
+    {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_bg_edit.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\bg_edit.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_nike_elcectric_pack.png.flat",
@@ -438,6 +482,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_bg_selected.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\bg_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\layout_activity_order_payment.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\layout\\activity_order_payment.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_smooth_black.png.flat",
@@ -478,6 +526,10 @@
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_baseline_shopping_bag_24.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-main-42:\\drawable\\baseline_shopping_bag_24.xml"
+    },
+    {
+        "merged": "com.example.nike.app-merged_res-40:/layout_activity_search.xml.flat",
+        "source": "com.example.nike.app-main-42:/layout/activity_search.xml"
     },
     {
         "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.5\\com.example.nike.app-merged_res-40:\\drawable_brand1.png.flat",

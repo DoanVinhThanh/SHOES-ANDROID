@@ -4,44 +4,38 @@ package com.example.nike.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import androidx.viewpager.widget.ViewPager;
 import com.example.nike.R;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentOrderBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final ImageView emptyImgFavorite;
+  public final TabLayout tabOrders;
 
   @NonNull
-  public final TextView emptyMsgFavorite;
+  public final ViewPager viewPagerOrder;
 
-  @NonNull
-  public final RecyclerView recyclerViewFavorite;
-
-  private FragmentOrderBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView emptyImgFavorite, @NonNull TextView emptyMsgFavorite,
-      @NonNull RecyclerView recyclerViewFavorite) {
+  private FragmentOrderBinding(@NonNull LinearLayout rootView, @NonNull TabLayout tabOrders,
+      @NonNull ViewPager viewPagerOrder) {
     this.rootView = rootView;
-    this.emptyImgFavorite = emptyImgFavorite;
-    this.emptyMsgFavorite = emptyMsgFavorite;
-    this.recyclerViewFavorite = recyclerViewFavorite;
+    this.tabOrders = tabOrders;
+    this.viewPagerOrder = viewPagerOrder;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -66,26 +60,19 @@ public final class FragmentOrderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.empty_img_favorite;
-      ImageView emptyImgFavorite = ViewBindings.findChildViewById(rootView, id);
-      if (emptyImgFavorite == null) {
+      id = R.id.tabOrders;
+      TabLayout tabOrders = ViewBindings.findChildViewById(rootView, id);
+      if (tabOrders == null) {
         break missingId;
       }
 
-      id = R.id.empty_msg_favorite;
-      TextView emptyMsgFavorite = ViewBindings.findChildViewById(rootView, id);
-      if (emptyMsgFavorite == null) {
+      id = R.id.viewPagerOrder;
+      ViewPager viewPagerOrder = ViewBindings.findChildViewById(rootView, id);
+      if (viewPagerOrder == null) {
         break missingId;
       }
 
-      id = R.id.recycler_view_favorite;
-      RecyclerView recyclerViewFavorite = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerViewFavorite == null) {
-        break missingId;
-      }
-
-      return new FragmentOrderBinding((RelativeLayout) rootView, emptyImgFavorite, emptyMsgFavorite,
-          recyclerViewFavorite);
+      return new FragmentOrderBinding((LinearLayout) rootView, tabOrders, viewPagerOrder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

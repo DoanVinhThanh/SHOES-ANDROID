@@ -18,6 +18,18 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="34">
         <activity
+            android:name=".Activity.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Successful_Payment_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Order_payment"
+            android:exported="false" />
+        <activity
             android:name=".Activity.User.SearchProductActivity"
             android:exported="false" />
         <activity
@@ -45,7 +57,7 @@
             android:name=".Activity.User.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.User.SplashActivity"
+            android:name=".Activity.User.TrangChuActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.User.WaitActivity"
@@ -60,7 +72,7 @@
             android:name=".Activity.User.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.User.TrangChuActivity"
+            android:name=".Activity.User.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

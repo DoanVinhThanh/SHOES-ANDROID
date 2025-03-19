@@ -3007,7 +3007,11 @@ drawable background1
 drawable baseline_arrow_back_24
 drawable baseline_arrow_back_ios_24
 drawable baseline_clear_24
+drawable baseline_favorite_24
+drawable baseline_favorite_border_24
 drawable baseline_keyboard_arrow_down_24
+drawable baseline_local_phone_24
+drawable baseline_man_24
 drawable baseline_manage_search_24
 drawable baseline_menu_24
 drawable baseline_photo_camera_24
@@ -3015,7 +3019,10 @@ drawable baseline_photo_library_24
 drawable baseline_search_24
 drawable baseline_shopping_bag_24
 drawable bg_btn_admin
+drawable bg_button_rounded
+drawable bg_edit
 drawable bg_editext
+drawable bg_rounded
 drawable bg_selected
 drawable bg_sign_in
 drawable bg_sign_up
@@ -3128,6 +3135,7 @@ drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable nike
+drawable nike_air
 drawable nike_airforce1
 drawable nike_airjordan1
 drawable nike_blazer
@@ -3164,6 +3172,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable orders_ic
 drawable outline_edit_24
 drawable outline_exit_to_app_24
 drawable outline_favorite_border_24
@@ -3178,6 +3187,7 @@ drawable round_back_white_100
 drawable shopping_bag
 drawable smooth_black
 drawable smooth_white
+drawable success
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3293,12 +3303,13 @@ id btnFavorite
 id btnSave
 id btnSelectSize
 id btnShopnow_cart
+id btn_Thanh_Cong
+id btn_Thanh_Toan
 id btn_back_category_admin
 id btn_back_product_admin
 id btn_back_shop_to_home
 id btn_bag_to_home
 id btn_bottom
-id btn_camera
 id btn_center
 id btn_check_out
 id btn_delete_product
@@ -3307,7 +3318,6 @@ id btn_favorite
 id btn_forget
 id btn_forgot_signin
 id btn_forgot_signup
-id btn_photos
 id btn_quan_ly_danh_muc
 id btn_quan_ly_san_pham
 id btn_setting_shop_to_home
@@ -3397,6 +3407,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit_profile
 id edit_query
 id edit_text_id
 id edtCategoryName
@@ -3558,6 +3569,7 @@ id name_admin_product
 id name_cart
 id name_product
 id nav_favorite
+id nav_header
 id nav_home
 id nav_logout
 id nav_order
@@ -3600,6 +3612,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id order_profile
 id outline
 id outward
 id overshoot
@@ -3673,6 +3686,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings_profile
 id sex_cart
 id sharedValueSet
 id sharedValueUnset
@@ -3723,6 +3737,7 @@ id tabItem1
 id tabItem2
 id tabItem3
 id tabMode
+id tabOrders
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3788,6 +3803,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewPagerOrder
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3925,6 +3941,8 @@ layout activity_admin_trang_chu
 layout activity_cart
 layout activity_edit_profile
 layout activity_forget_password
+layout activity_order_payment
+layout activity_orders
 layout activity_product_detail
 layout activity_profile
 layout activity_quan_ly_danh_muc
@@ -3935,6 +3953,7 @@ layout activity_setting
 layout activity_sign_in
 layout activity_sign_up
 layout activity_splash
+layout activity_successful_payment
 layout activity_trang_chu
 layout activity_wait
 layout bottom_sheet_quality

@@ -1,5 +1,6 @@
 package com.example.nike.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.nike.Activity.User.ProductDetailActivity;
+import com.example.nike.Activity.User.SearchProductActivity;
 import com.example.nike.Adapter.CategoryAdapter;
 import com.example.nike.Adapter.ProductAdapter;
 import com.example.nike.Model.Category;
@@ -58,6 +61,11 @@ public class MenFragment extends Fragment {
 
         categoryAdapter = new CategoryAdapter(categoryList);
         recyclerView.setAdapter(categoryAdapter);
+
+        categoryAdapter.setOnItemClickListener(category -> {
+            Intent intent = new Intent(getContext(), SearchProductActivity.class);
+            startActivity(intent);
+        });
     }
     private void setDataRCVnewShoes(){
 
@@ -74,6 +82,11 @@ public class MenFragment extends Fragment {
 
         newProductAdapter = new ProductAdapter(ProductList);
         recyclerViewNewProducts.setAdapter(newProductAdapter);
+
+        newProductAdapter.setOnItemClickListener(product -> {
+            Intent intent = new Intent(getContext(), ProductDetailActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void Anhxa(View view){

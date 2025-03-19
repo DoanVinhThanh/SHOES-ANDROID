@@ -34,6 +34,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
+            android:name="com.example.nike.Activity.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Successful_Payment_activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.nike.Order_payment"
+            android:exported="false" />
+        <activity
             android:name="com.example.nike.Activity.User.SearchProductActivity"
             android:exported="false" />
         <activity
@@ -61,7 +73,7 @@
             android:name="com.example.nike.Activity.User.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.User.SplashActivity"
+            android:name="com.example.nike.Activity.User.TrangChuActivity"
             android:exported="false" />
         <activity
             android:name="com.example.nike.Activity.User.WaitActivity"
@@ -76,7 +88,7 @@
             android:name="com.example.nike.Activity.User.SearchActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nike.Activity.User.TrangChuActivity"
+            android:name="com.example.nike.Activity.User.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
