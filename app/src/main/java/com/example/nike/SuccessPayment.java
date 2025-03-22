@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.nike.Activity.User.CartActivity;
 import com.example.nike.Activity.User.TrangChuActivity;
 
-public class Order_payment extends AppCompatActivity {
+public class SuccessPayment extends AppCompatActivity {
     private Button btnThanhToan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class Order_payment extends AppCompatActivity {
         btnThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Order_payment.this , Successful_Payment_activity.class);
+                Intent intent = new Intent(SuccessPayment.this , Successful_Payment_activity.class);
                 startActivity(intent);
                 finishAffinity();
             }
