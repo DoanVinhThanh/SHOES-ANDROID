@@ -27,7 +27,7 @@
             android:name=".Successful_Payment_activity"
             android:exported="false" />
         <activity
-            android:name=".Order_payment"
+            android:name=".OrdersPayment"
             android:exported="false" />
         <activity
             android:name=".Activity.User.SearchProductActivity"
